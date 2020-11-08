@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #292929;
+  font-family: 'Share Tech', sans-serif;
+}
+
+body {
+  background: #393939;
+  overscroll-behavior: none;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 300px;
+      grid-template-rows: 300px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10%;
+}
+
+#codeCard {
+  background-color: #96CEB4;
+}
+
+#creativeCard {
+  background-color: #FF6F69;
+}
+
+#communityCard {
+  background-color: #FFCC5C;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  -webkit-clip-path: inset(0% 0% 0% 0% round 30px);
+          clip-path: inset(0% 0% 0% 0% round 30px);
+}
+
+/*hexagon detail*/
+#codeCard::after {
+  content: " ";
+  position: absolute;
+  right: 0%;
+  top: -5%;
+  border-bottom: 150px solid #cdffe5;
+  border-left: 150px solid transparent;
+  border-right: 135px solid transparent;
+  height: 120px;
+  width: 150px;
+  -webkit-transform: rotate(-200deg);
+          transform: rotate(-200deg);
+}
+
+/*hexagon detail*/
+#creativeCard::after {
+  content: " ";
+  position: absolute;
+  left: -20%;
+  top: -5%;
+  border-bottom: 150px solid 	#ffaaaa;
+  border-left: 150px solid transparent;
+  border-right: 135px solid transparent;
+  height: 120px;
+  width: 150px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/*hexagon detail*/
+#communityCard::after {
+  content: " ";
+  position: absolute;
+  left: 0%;
+  top: -5%;
+  border-bottom: 150px solid #ffeeae;
+  border-left: 150px solid transparent;
+  border-right: 135px solid transparent;
+  height: 120px;
+  width: 150px;
+  -webkit-transform: rotate(200deg);
+          transform: rotate(200deg);
+}
+
+.cardText {
+  position: relative;
+  top: 80%;
+  text-align: center;
+  color: #393939;
+  font-family: 'Share Tech', sans-serif;
+}
+/*# sourceMappingURL=cardStyle.css.map */

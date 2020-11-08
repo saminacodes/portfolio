@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #292929;
+  font-family: 'Share Tech', sans-serif;
+}
+
+/*colors*/
+/*accents*/
+/*lighter accents*/
+body {
+  background: #292929;
+  overscroll-behavior: none;
+}
+
+/*styling for footer*/
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #9896ce;
+  border-top: solid white 0.5em;
+}
+
+/*styling for flex-box (responsive)*/
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: row;
+      -ms-flex: row wrap;
+          flex: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .pages-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+  .pages-list > * {
+    text-align: left;
+    margin-bottom: 1em;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 50%;
+            flex: 0 50%;
+  }
+}
+
+/*style footer links*/
+.pages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.pages-list li {
+  color: #292929;
+  list-style-type: none;
+  padding-right: 1.25em;
+}
+
+.pages-list a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a.fas {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 1.25em;
+}
+
+/*remove padding property if you decide to add more linky links*/
+a.fas:before {
+  font-family: 'Font Awesome 5 Free';
+  padding: .3125em;
+}
+
+.pages li:hover > * {
+  color: white;
+}
+
+#copyright {
+  color: #292929;
+  font-family: 'Share Tech', sans-serif;
+  font-size: 1.25em;
+}
+
+/*style social icons*/
+a.fa {
+  padding: 0 .625em;
+  text-decoration: none;
+  color: #292929;
+}
+
+a.fa:hover {
+  color: white;
+}
+/*# sourceMappingURL=footerStyle.css.map */
