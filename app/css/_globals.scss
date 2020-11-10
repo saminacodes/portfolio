@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import "variables";
 
 
 html {
@@ -12,8 +13,9 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background: #292929;
-    font-family: 'Share Tech', sans-serif;
+    overscroll-behavior: none;
 }

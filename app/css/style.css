@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+/*colors*/
+/*accents*/
+/*lighter accents*/
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
 html {
@@ -14,12 +17,21 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
   background: #292929;
-  font-family: 'Share Tech', sans-serif;
+  overscroll-behavior: none;
 }
 
+/*colors*/
+/*accents*/
+/*lighter accents*/
 /*colors*/
 /*accents*/
 /*lighter accents*/
@@ -36,10 +48,16 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
   background: #292929;
-  font-family: 'Share Tech', sans-serif;
+  overscroll-behavior: none;
 }
 
 /*colors*/
@@ -51,6 +69,9 @@ body {
 }
 
 .grid-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 300px;
@@ -64,7 +85,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.grid-cards {
+  padding: 1em;
 }
 
 #codeCard {
@@ -85,6 +111,12 @@ body {
   height: 300px;
   -webkit-clip-path: inset(0% 0% 0% 0% round 30px);
           clip-path: inset(0% 0% 0% 0% round 30px);
+}
+
+.grid-img {
+  z-index: 2;
+  width: 100%;
+  position: relative;
 }
 
 /*hexagon detail*/
@@ -133,13 +165,15 @@ body {
 }
 
 .cardText {
-  position: relative;
-  top: 80%;
+  padding-bottom: 1em;
   text-align: center;
   color: #393939;
   font-family: 'Share Tech', sans-serif;
 }
 
+/*colors*/
+/*accents*/
+/*lighter accents*/
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -153,10 +187,16 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
   background: #292929;
-  font-family: 'Share Tech', sans-serif;
+  overscroll-behavior: none;
 }
 
 /*colors*/
@@ -164,10 +204,7 @@ body {
 /*lighter accents*/
 /*styling for footer*/
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-bottom: 0;
   width: 100%;
   background-color: #9896ce;
   border-top: solid white 0.5em;
