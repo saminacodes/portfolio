@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 /*colors*/
 /*accents*/
 /*lighter accents*/
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -29,6 +32,40 @@ body {
   overscroll-behavior: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Share Tech', sans-serif;
+}
+
+p {
+  color: white;
+}
+
+li {
+  color: white;
+  list-style-type: square;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+}
+
+hr {
+  color: white;
+  width: inherit;
+  opacity: 0.75;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
 /*colors*/
 /*accents*/
 /*lighter accents*/
@@ -60,14 +97,43 @@ body {
   overscroll-behavior: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Share Tech', sans-serif;
+}
+
+p {
+  color: white;
+}
+
+li {
+  color: white;
+  list-style-type: square;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+}
+
+hr {
+  color: white;
+  width: inherit;
+  opacity: 0.75;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
 /*colors*/
 /*accents*/
 /*lighter accents*/
-body {
-  background: #393939;
-  overscroll-behavior: none;
-}
-
 .grid-container {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -173,7 +239,6 @@ body {
   padding-bottom: 1em;
   text-align: center;
   color: #393939;
-  font-family: 'Share Tech', sans-serif;
 }
 
 /*colors*/
@@ -202,6 +267,40 @@ body {
   min-height: 100vh;
   background: #292929;
   overscroll-behavior: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Share Tech', sans-serif;
+}
+
+p {
+  color: white;
+}
+
+li {
+  color: white;
+  list-style-type: square;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+}
+
+hr {
+  color: white;
+  width: inherit;
+  opacity: 0.75;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: white;
 }
 
 /*colors*/

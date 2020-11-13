@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
-@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+@import "variables";
 
 html {
     font-size: 100%;
@@ -19,3 +20,39 @@ body {
     background: #292929;
     overscroll-behavior: none;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Share Tech', sans-serif;
+}
+
+p {
+    color: white;
+}
+
+li {
+    color: white;
+    list-style-type: square;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+}
+
+hr {
+    color: white;
+    width: inherit;
+    opacity: 0.75;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+

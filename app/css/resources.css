@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/*colors*/
+/*accents*/
+/*lighter accents*/
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100%;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background: #292929;
+  overscroll-behavior: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Share Tech', sans-serif;
+}
+
+p {
+  color: white;
+}
+
+li {
+  color: white;
+  list-style-type: square;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+}
+
+hr {
+  color: white;
+  width: inherit;
+  opacity: 0.75;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+/*colors*/
+/*accents*/
+/*lighter accents*/
+.resourceHeader {
+  color: #9896ce;
+}
+
+.resourceType > ul > li {
+  padding-top: 0.5em;
+}
+
+a:hover {
+  opacity: .5;
+}
+
+.resourceLink {
+  font-family: 'Lato', sans-serif;
+}
+
+span {
+  padding-right: 3px;
+}
+
+hr {
+  width: 80%;
+}
+
+#contactMessage {
+  color: #9896ce;
+}
+/*# sourceMappingURL=resources.css.map */
