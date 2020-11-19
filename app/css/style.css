@@ -532,7 +532,7 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: auto;
-  padding: 2em;
+  padding: 1em;
 }
 
 .description {
