@@ -7,6 +7,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -416,5 +418,157 @@ a.fa {
 
 a.fa:hover {
   color: white;
+}
+
+/*colors*/
+/*accents*/
+/*lighter accents*/
+/*colors*/
+/*accents*/
+/*lighter accents*/
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100%;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background: #292929;
+  overscroll-behavior: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Share Tech', sans-serif;
+}
+
+p {
+  color: white;
+}
+
+li {
+  color: white;
+  list-style-type: square;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+}
+
+hr {
+  color: white;
+  width: inherit;
+  opacity: 0.75;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.notes {
+  color: white;
+  font-family: 'Share Tech', sans-serif;
+  line-height: 2em;
+}
+
+.bold {
+  text-transform: uppercase;
+}
+
+.community {
+  color: #FFCC5C;
+}
+
+.coding {
+  color: #96CEB4;
+}
+
+.creative {
+  color: #FF6F69;
+}
+
+.link {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.codingHover:hover {
+  color: #96CEB4;
+}
+
+.creativeHover:hover {
+  color: #FF6F69;
+}
+
+.communityHover:hover {
+  color: #FFCC5C;
+}
+
+.section-container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  padding: 2em;
+}
+
+.description {
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+  padding: 0 1em 1em 1em;
+}
+
+.codingContent {
+  border: solid 0.25em #96CEB4;
+  border-radius: 20px;
+}
+
+.creativeContent {
+  border: solid 0.25em #FF6F69;
+  border-radius: 20px;
+}
+
+.communityContent {
+  border: solid 0.25em #FFCC5C;
+  border-radius: 20px;
+}
+
+.content {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+  padding: 1em;
+}
+
+@media (max-width: 800px) {
+  .description, .content {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
