@@ -1,15 +1,13 @@
-import Head from "next/head";
-import Image from "next/image";
-import { useEffect } from "react";
-
-// CustomLink takes in two props: title and url.
-// If there is no title prop, by default it will show the website logo.
-import CustomLink from "../components/common/CustomLink";
 import { CustomSections } from "../components/common/CustomSections";
 
 export default function Home() {
   return (
     <main id="home" className="home">
+      <CustomSections
+        title="Hi, I'm Samina"
+        textColor="red-text"
+        content="Developer Relations Engineer, Tech Educator and Founder of Dark Mode Comics."
+      ></CustomSections>
       <CustomSections
         title="Developer Relations Engineer"
         textColor="yellow-text"
