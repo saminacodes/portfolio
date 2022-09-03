@@ -1,4 +1,14 @@
-.section-text {
+.section-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+
+  .section-container:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .section-text {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -14,4 +24,11 @@
     font-size: 1.25rem;
     font-weight: bold;
   }
+}
+
+.section-image {
+  border: 3px solid white;
+  border-image-outset: 0;
+}
+
 }
