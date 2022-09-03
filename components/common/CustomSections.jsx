@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 export const CustomSections = (props) => {
   return (
     <section>
-      <div className="wrapper">
+      <div className="wrapper section-container">
         <div className="section-text">
           <h2 className={props.textColor}>{props.title}</h2>
           <p className="section-content">{props.content}</p>
@@ -31,8 +33,16 @@ export const CustomSections = (props) => {
             </a>
           )}
         </div>
-        <div>
-          <img></img>
+        <div className="section-image">
+          {props.imageLink && (
+            <Image
+              src={props.imageLink}
+              layout="intrinsic"
+              width={480}
+              height={480}
+              objectFit="cover"
+            ></Image>
+          )}
         </div>
       </div>
     </section>
