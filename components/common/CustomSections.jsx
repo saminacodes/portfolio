@@ -26,9 +26,9 @@ export const CustomSections = (props) => {
                   <path
                     d="M1 8H17M10 1L17 8L10 15"
                     stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </a>
@@ -41,7 +41,7 @@ export const CustomSections = (props) => {
                 layout="intrinsic"
                 width={480}
                 height={480}
-                objectFit="cover"
+                objectFit="fit"
               ></Image>
             )}
           </div>
