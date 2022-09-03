@@ -1,8 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { useRouter } from "next/router";
-import CustomLink from "../components/common/CustomLink";
 
 export default function Header() {
   // CustomLink takes in two props: title and url.

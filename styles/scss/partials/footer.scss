@@ -2,9 +2,24 @@ footer#footer {
   width: 100%;
   height: auto;
 
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .contact-text {
+    font-size: 4rem;
+    max-width: 40%;
+    span {
+      color: var(--pastel-purple);
+    }
   }
+
+  .email-button {
+    margin-top: 30px;
+  }
+
+  .copyright {
+    font-size: 0.5rem;
+  }
+
+  .footer-socials {
+    margin-top: 100px;
+  }
+
 }
