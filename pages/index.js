@@ -15,7 +15,7 @@ export default function Home() {
         imageLink="/images/port-1.png"
         content="I am a content & partnerships focused engineer at thirdweb. I primarily work on educating users on how to use thirdweb or partner tools in their decentralized applications."
         linkText="Join my workshops!"
-        link="samina.dev"
+        link="https://lu.ma/saminacodes"
       ></CustomSections>
       <CustomSections
         title="Tech Educator"
@@ -23,7 +23,7 @@ export default function Home() {
         imageLink="/images/port-1.png"
         content="From teaching kids web development to teaching developers web3 development, I enjoy creating a wide variety of content easily accessible online."
         linkText="Learn web3 development!"
-        link="samina.dev"
+        link="https://samina.dev"
       ></CustomSections>
       <CustomSections
         title="Founder DarkModeComics"
@@ -31,7 +31,7 @@ export default function Home() {
         imageLink="/images/port-1.png"
         content="What started as a little illustration turned into a series of comics to portray the day-to-day struggles of being a developer."
         linkText="Read my comics!"
-        link="samina.dev"
+        link="https://twitter.com/DarkModeComics"
       ></CustomSections>
     </main>
   );
