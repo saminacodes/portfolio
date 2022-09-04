@@ -13,7 +13,7 @@ export default function Home() {
         title="Developer Relations Engineer"
         textColor="yellow-text"
         imageLink="/images/port-1.png"
-        content="I am a content & partnerships focused engineer at thirdweb. I primarily work on educating users on how to use thirdweb or partner tools in their decentralized applications."
+        content="I am an education & partnerships focused developer relations engineer at thirdweb. I primarily work on educating users on how to use thirdweb or partner tools in their decentralized applications."
         linkText="Join my workshops!"
         link="https://lu.ma/saminacodes"
       ></CustomSections>
@@ -23,7 +23,7 @@ export default function Home() {
         imageLink="/images/port-1.png"
         content="From teaching kids web development to teaching developers web3 development, I enjoy creating a wide variety of content easily accessible online."
         linkText="Learn web3 development!"
-        link="https://samina.dev"
+        link="https://cookie-project.xyz"
       ></CustomSections>
       <CustomSections
         title="Founder DarkModeComics"
