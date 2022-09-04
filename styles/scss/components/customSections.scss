@@ -37,6 +37,10 @@ section.block.hero {
     }
   }
 
+  .image-container {
+    border: 2px solid white;
+  }
+
   &.main-hero {
     h2 {
       font-size: clamp(2.5rem, 10vw, 6rem);
