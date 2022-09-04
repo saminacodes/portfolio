@@ -19,23 +19,45 @@ section.block.hero {
   }
 
   .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
     h2 {
       line-height: 1;
       margin-bottom: 2rem;
       @media screen and (max-width: 768px) {
         margin-bottom: 1rem;
       }
+    }
 
-      &.main-title {
-        font-size: clamp(2.5rem, 10vw, 6rem);
-      }
+    a {
+      font-size: 1.25rem;
+      margin-top: 1.25em;
+    }
+  }
 
-      &.secondary-title {
-        font-size: clamp(1.5rem, 5vw, 3rem);
-      }
+  &.main-hero {
+    h2 {
+      font-size: clamp(2.5rem, 10vw, 6rem);
     }
     p {
-      max-width: 55ch;
+      max-width: 38ch;
+      line-height: 1.5;
+      font-size: clamp(1.25rem, 10vw, 1.5rem);
+    }
+  }
+
+  &.secondary-hero {
+    .content-container {
+      h2 {
+        font-size: clamp(1.5rem, 5vw, 3rem);
+      }
+      p {
+        max-width: 55ch;
+        line-height: 1.5;
+        font-size: clamp(1rem, 10vw, 1.25rem);
+      }
     }
   }
 }

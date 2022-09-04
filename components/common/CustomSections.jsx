@@ -48,7 +48,7 @@ export const CustomSections = (props) => {
     //     </div>
     //   </div>
     // </section>
-    <section className={`block hero`}>
+    <section className={`block hero ${props.style}`}>
       <div className="wrapper">
         <div className={`row ${props.row}`}>
           <div className="col content-container">
@@ -60,7 +60,7 @@ export const CustomSections = (props) => {
             </p>
             {props.link && (
               <a
-                className="section-link"
+                className="link"
                 target="_blank"
                 rel="noreferrer"
                 href={props.link}
