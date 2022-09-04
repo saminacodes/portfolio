@@ -1,0 +1,20 @@
+.setup {
+    table {
+        border-collapse: collapse;
+        width: 800px;
+        margin-bottom: 1rem;
+        table-layout: fixed;
+    }
+    th {
+        font-family: var(--title);
+        text-align: left;
+        color: white;
+    }
+    td {
+        color: white;
+        font-family: var(--body);
+        border: 1px solid white;
+        padding: 8px;
+        width: auto;
+    }
+}
