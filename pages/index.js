@@ -7,7 +7,7 @@ export default function Home() {
         title="Hi, I'm Samina"
         textColor="red-text"
         imageLink="/images/port-1.png"
-        content="Developer Relations Engineer, Tech Educator and Founder of Dark Mode Comics."
+        content="Developer Relations Engineer, Tech Educator, and Founder of Dark Mode Comics."
       ></CustomSections>
       <CustomSections
         title="Developer Relations Engineer"
