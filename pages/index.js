@@ -5,12 +5,15 @@ export default function Home() {
     <main id="home" className="home">
       <CustomSections
         title="Hi, I'm Samina"
+        titleType='main-title'
         textColor="red-text"
         imageLink="/images/port-1.png"
         content="Developer Relations Engineer, Tech Educator, and Founder of Dark Mode Comics."
       ></CustomSections>
       <CustomSections
+        row="reverse"
         title="Developer Relations Engineer"
+        titleType='secondary-title'
         textColor="yellow-text"
         imageLink="/images/port-1.png"
         content="I am an education & partnerships focused developer relations engineer at thirdweb. I primarily work on educating users on how to use thirdweb or partner tools in their decentralized applications."
@@ -19,6 +22,7 @@ export default function Home() {
       ></CustomSections>
       <CustomSections
         title="Tech Educator"
+        titleType='secondary-title'
         textColor="blue-text"
         imageLink="/images/port-1.png"
         content="From teaching kids web development to teaching developers web3 development, I enjoy creating a wide variety of content easily accessible online."
@@ -26,7 +30,9 @@ export default function Home() {
         link="https://cookie-project.xyz"
       ></CustomSections>
       <CustomSections
+        row="reverse"
         title="Founder DarkModeComics"
+        titleType='secondary-title'
         textColor="green-text"
         imageLink="/images/port-1.png"
         content="What started as a little illustration turned into a series of comics to portray the day-to-day struggles of being a developer."
