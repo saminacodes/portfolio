@@ -28,7 +28,7 @@ export default function SetupPage() {
         </table>
         <table>
           <tr>
-            <th>Audio Input</th>
+            <th>Audio</th>
           </tr>
 
           <SetupItem category="Microphone" item="Shure SM7B" />
@@ -42,46 +42,48 @@ export default function SetupPage() {
             item="Rode PSA1"
             itemLink="https://amzn.to/3REhNev"
           />
-        </table>
-        <table>
-          <tr>
-            <th>Audio Output</th>
-          </tr>
           <SetupItem category="Speaker" item="Kanto YU2" />
           <SetupItem category="Headphones" item="Sennheiser HD579" />
         </table>
 
         <table>
           <tr>
-            <th>Camera Setup</th>
+            <th>Camera</th>
           </tr>
           <SetupItem category="Camera" item="Sony a6000" />
           <SetupItem category="Cam Link" item="Elgato Cam Link 4K" />
           <SetupItem category="Lights" item="Elgato Cam Link 4K" />
         </table>
-
-        <h2 className="green-text">Accessories</h2>
         <table>
           <tr>
-            <th>Company</th>
+            <th>I/O</th>
           </tr>
-          <SetupItem category="Camera" item="Sony a6000" />
+          <SetupItem
+            category="Docking Station"
+            item="Corsair Thunderbolt TBT"
+          />
+          <SetupItem category="Keyboard" item="Sony a6000" />
+          <SetupItem category="Mouse" item="Elgato Cam Link 4K" />
+        </table>
+
+        <h2 className="green-text">Desk/Accessories</h2>
+        <table>
+          <tr>
+            <th>Desk</th>
+          </tr>
+          <SetupItem
+            category="Desk"
+            item="Ergonofis The Shift / Deep Black / 30&#39; X 72&#39;"
+            itemLink="http://ergonofis.refr.cc/saminak"
+          />
+          <SetupItem category="Chair" item="Herman Miller Sayl" />
+          <SetupItem category="Desk Mat" item="Sony a6000" />
           <SetupItem category="Cam Link" item="Elgato Cam Link 4K" />
         </table>
-        <h2 className="blue-text">Miscellaneous</h2>
+        <h2 className="blue-text">Softwares</h2>
         <table>
           <tr>
-            <th>Setup</th>
-          </tr>
-          <tr>
-            <td>Desk</td>
-            <td>Ergonofis The Shift / Deep Black / 30&#39; X 72&#39;</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Chair</td>
-            <td>Herman Miller Sayl</td>
-            <td></td>
+            <th>Content Creation</th>
           </tr>
         </table>
       </section>
