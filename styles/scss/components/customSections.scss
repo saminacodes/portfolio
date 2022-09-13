@@ -79,18 +79,24 @@ section.block.hero {
       background-color: var(--pastel-green);
       top: 100px;
       left: 150px;
-      transform: rotate(-20deg);
+      transform: rotate(-5deg);
     }
 
     .bg-blue {
       background-color: var(--pastel-blue);
       top: 80px;
       right: 80px;
-      transform: rotate(-20deg);
+      transform: rotate(-10deg);
     }
 
     .bg-purple {
       background-color: var(--pastel-purple);
+    }
+
+    @media screen and (max-width: 768px) {
+      .bg-red, .bg-yellow, .bg-green, .bg-blue {
+        top: 0px;
+      }
     }
   }
 
