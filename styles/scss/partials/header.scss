@@ -5,6 +5,7 @@ header.header {
  justify-content: space-between;
  width: 100%;
  margin: 0 auto;
+ margin-top: 30px;
  
  .logo {
   font-size: 1.5rem;
@@ -20,5 +21,21 @@ header.header {
     display: flex;
     align-items: center;
     gap: 24px;
+  }
+
+  .hamburger {
+    // display: none;
+    padding: 0;
+
+    .hamburger-inner {
+      background-color: white;
+      width: 32px;
+
+      &::after,
+      &::before {
+        background-color: white;
+        width: 32px;
+      }
+    }
   }
 }

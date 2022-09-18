@@ -4,7 +4,7 @@ export default function SetupPage() {
   return (
     <main id="setup" className="setup">
       <section className="wrapper">
-        <div></div>
+        <h3>Disclaimer: This page contains affiliate links.</h3>
         <h2 className="red-text">Specs</h2>
         <table>
           <tr>
@@ -62,7 +62,7 @@ export default function SetupPage() {
             category="Docking Station"
             item="Corsair Thunderbolt TBT"
           />
-          <SetupItem category="Keyboard" item="Sony a6000" />
+          <SetupItem category="Keyboard" item="" />
           <SetupItem category="Mouse" item="Elgato Cam Link 4K" />
         </table>
 
@@ -77,14 +77,24 @@ export default function SetupPage() {
             itemLink="http://ergonofis.refr.cc/saminak"
           />
           <SetupItem category="Chair" item="Herman Miller Sayl" />
-          <SetupItem category="Desk Mat" item="Sony a6000" />
-          <SetupItem category="Cam Link" item="Elgato Cam Link 4K" />
+          <SetupItem
+            category="Desk Mat"
+            item="Corsair MM350 PRO Premium Gaming Mouse Pad"
+          />
+          <SetupItem
+            category="Laptop Stand"
+            item="Rain Design 10076 mStand360"
+          />
         </table>
         <h2 className="blue-text">Softwares</h2>
         <table>
           <tr>
             <th>Content Creation</th>
           </tr>
+          <SetupItem
+            category="Laptop Stand"
+            item="Rain Design 10076 mStand360"
+          />
         </table>
       </section>
     </main>

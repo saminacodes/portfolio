@@ -2,6 +2,7 @@
 
 // #####  THIS IS VERY IMPORTANT. ##### //
 // Without this scroll-behavior property applied, your Y-Position will be retained on route change. When you change pages, your view will scroll to the top, triggering ALL GSAP animations on that page in the process.
+
 :root {
   scroll-behavior: auto !important;
 }
@@ -140,3 +141,4 @@ button {
 @import 'scss/pages/_pages';
 @import 'scss/partials/_partials';
 @import 'scss/components/_components';
+@import "node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";

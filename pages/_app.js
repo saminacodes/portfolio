@@ -4,6 +4,7 @@ import Footer from "../partials/footer";
 import React from "react";
 
 function MyApp({ Component, pageProps }) {
+  console.log("Stop inspecting my code. >:(");
   return (
     <>
       <Header />

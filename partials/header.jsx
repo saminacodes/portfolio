@@ -1,9 +1,41 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import Menu from "./menu";
 
 export default function Header() {
-  // CustomLink takes in two props: title and url.
-  // If there is no title prop, by default it will show the website logo.
+  const buttonRef = useRef(null);
+  const menuRef = useRef(null);
+
+  function activeMenu() {
+    buttonRef.current.classList.toggle("is-active");
+    // menuRef.current
+    //   .querySelector(".mobile-menu")
+    //   .classList.toggle("active-menu");
+  }
+
+  function closeMenu() {
+    buttonRef.current.classList.remove("is-active");
+    menuRef.current
+      .querySelector(".mobile-menu")
+      .classList.remove("active-menu");
+  }
+
+  // const router = useRouter();
+
+  // useEffect(() => {
+  //   const homeLink = menuRef.current.querySelector(".home-link");
+  //   const setupLink = menuRef.current.querySelector(".setup-link");
+
+  //   if (router.asPath === "/") {
+  //     homeLink.classList.add("active");
+  //     setupLink.classList.remove("active");
+  //   } else if (router.asPath === "/setup") {
+  //     homeLink.classList.remove("active");
+  //     setupLink.classList.add("active");
+  //   }
+  // }, [router.asPath]);
+
   return (
     <header id="main-header" className="header">
       <div className="wrapper">
@@ -13,25 +45,18 @@ export default function Header() {
               <a>saminacodes</a>
             </Link>
           </div>
-          {/* <ul className="nav-list">
-            <li>
-              <Link href="/about">
-                <a>About</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/portfolio-page">
-                <a>Portfolio</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact-page">
-                <a>Contact</a>
-              </Link>
-            </li> */}
-          {/* <button className="mobile-menu"></button>
-          </ul> */}
+          <button
+            className="hamburger hamburger--collapse"
+            type="button"
+            ref={buttonRef}
+            onClick={activeMenu}
+          >
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
+            </span>
+          </button>
         </nav>
+        <Menu />
       </div>
     </header>
   );
