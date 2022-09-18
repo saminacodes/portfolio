@@ -36,6 +36,7 @@ export default function SetupPage() {
           <SetupItem
             category="Mic Activator"
             item="Cloud Microphones Cloudlifter CL-1"
+            itemLink="https://amzn.to/3Bsiu3P"
           />
           <SetupItem
             category="Mic Stand"
@@ -50,9 +51,21 @@ export default function SetupPage() {
           <tr>
             <th>Camera</th>
           </tr>
-          <SetupItem category="Camera" item="Sony a6000" />
-          <SetupItem category="Cam Link" item="Elgato Cam Link 4K" />
-          <SetupItem category="Lights" item="Elgato Cam Link 4K" />
+          <SetupItem
+            category="Camera"
+            item="Sony a6000"
+            itemLink="https://amzn.to/3Biozjq"
+          />
+          <SetupItem
+            category="Cam Link"
+            item="Elgato Cam Link 4K"
+            itemLink="https://amzn.to/3BPC4sa"
+          />
+          <SetupItem
+            category="Lights"
+            item="Elgato Key Light"
+            itemLink="https://amzn.to/3SfsFj2"
+          />
         </table>
         <table>
           <tr>
@@ -61,9 +74,14 @@ export default function SetupPage() {
           <SetupItem
             category="Docking Station"
             item="Corsair Thunderbolt TBT"
+            itemLink="https://amzn.to/3QNyP9b"
           />
-          <SetupItem category="Keyboard" item="" />
-          <SetupItem category="Mouse" item="Elgato Cam Link 4K" />
+          <SetupItem
+            category="Keyboard"
+            item="Apple Magic Keyboard with Touch ID"
+            itemLink="https://amzn.to/3Ud1IOO/"
+          />
+          <SetupItem category="Mouse" item="Apple Magic Mouse 2 - Space Grey" />
         </table>
 
         <h2 className="green-text">Desk/Accessories</h2>
@@ -76,14 +94,25 @@ export default function SetupPage() {
             item="Ergonofis The Shift / Deep Black / 30&#39; X 72&#39;"
             itemLink="http://ergonofis.refr.cc/saminak"
           />
-          <SetupItem category="Chair" item="Herman Miller Sayl" />
+          <SetupItem
+            category="Chair"
+            item="Herman Miller Sayl"
+            itemLink="https://www.hermanmiller.com/products/seating/office-chairs/sayl-chairs/"
+          />
           <SetupItem
             category="Desk Mat"
             item="Corsair MM350 PRO Premium Gaming Mouse Pad"
+            itemLink="https://amzn.to/3Sflszs"
           />
           <SetupItem
             category="Laptop Stand"
             item="Rain Design 10076 mStand360"
+            itemLink="https://amzn.to/3xACAIi"
+          />
+          <SetupItem
+            category="Green Screen"
+            item="Elgato Green Screen - Collapsible"
+            itemLink="https://amzn.to/3RVPNmX"
           />
         </table>
         <h2 className="blue-text">Softwares</h2>
@@ -92,8 +121,24 @@ export default function SetupPage() {
             <th>Content Creation</th>
           </tr>
           <SetupItem
-            category="Laptop Stand"
-            item="Rain Design 10076 mStand360"
+            category="Code Editor"
+            item="Visual Studio Code"
+            itemLink="https://code.visualstudio.com/"
+          />
+          <SetupItem
+            category="Illustrations"
+            item="Procreate"
+            itemLink="https://procreate.art/"
+          />
+          <SetupItem
+            category="Vector Design"
+            item="Affinity Designer"
+            itemLink="https://affinity.serif.com/en-us/designer/"
+          />
+          <SetupItem
+            category="Video Editing"
+            item="Final Cut Pro"
+            itemLink="https://www.apple.com/final-cut-pro/"
           />
         </table>
       </section>
