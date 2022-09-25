@@ -1,0 +1,22 @@
+.faq {
+    display: flex;
+    cursor: pointer;
+    // flex-direction: row;
+
+    .faq-num {
+        color: white;
+        font-family: var(--title);
+        font-size: 1.5rem;
+    }
+
+    .faq-question {
+        color: white;
+        font-family: var(--body);
+        list-style-type: none;
+        font-size: 3rem;
+    }
+
+    .faq-answer {
+        font-size: 1.125rem;
+    }
+}

@@ -1,0 +1,40 @@
+.about {
+  display: flex;
+  gap: 200px;
+    h2 {
+        font-size: clamp(2.5rem, 10vw, 6rem);
+    }
+
+    .about-text {
+        font-size: 1.5rem;
+    }
+
+    .faq {
+        display: flex;
+        flex-direction: row;
+        gap: 300px;
+        align-items: center;
+        border-bottom: 1px solid var(--pastel-blue);
+    }
+
+    .faq-title {
+        font-family: var(--body);
+        font-size: 3rem;
+        font-weight: normal;
+    }
+
+    .faq-text {
+        font-size: 1.5rem;
+        display: none;
+        overflow: hidden;
+    }
+
+    .about-section {
+      margin-bottom: 270px;
+    }
+
+    .tech-logos {
+      display: flex;
+      gap: 24px;
+    }
+}

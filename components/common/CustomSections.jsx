@@ -43,7 +43,7 @@ export const CustomSections = (props) => {
                 layout="intrinsic"
                 width={480}
                 height={480}
-                objectFit="fit"
+                objectFit="cover"
               ></Image>
             )}
             <div className={`bg-square ${props.bgColor}`}></div>
