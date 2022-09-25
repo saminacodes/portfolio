@@ -1,6 +1,4 @@
 .about {
-  display: flex;
-  gap: 200px;
     h2 {
         font-size: clamp(2.5rem, 10vw, 6rem);
     }
@@ -29,8 +27,22 @@
         overflow: hidden;
     }
 
+    .about-section, .technologies-section {
+      margin-bottom: 250px;
+    }
+    
     .about-section {
-      margin-bottom: 270px;
+      max-width: 120ch;
+    }
+    .technologies-section {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+    
+    .tech-logos {
+      margin-top: 36px;
     }
 
     .tech-logos {

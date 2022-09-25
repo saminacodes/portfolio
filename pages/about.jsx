@@ -29,7 +29,7 @@ export default function AboutPage() {
             goldfish, a common pleco, and a black cat named Saia.{" "}
           </p>
         </div>
-        <div className="about-section">
+        <div className="technologies-section">
           <h2 className="green-text">Technologies</h2>
           <div className="tech-logos">
             <svg
@@ -121,29 +121,29 @@ export default function AboutPage() {
               />
             </svg>
           </div>
-          <div className="about-section">
-            <h2 className="blue-text">F.A.Q</h2>
-            <Question
-              number="001"
-              question="Where are you from?"
-              answer="I am from Afghanistan. I live in the United States. "
-            />
-            <Question
-              number="002"
-              question="When did you start programming?"
-              answer="I started programming January 2018 with an introductory CS course at my University. My first programming language was technically JavaScript, but through a library called p5.js."
-            />
-            <Question
-              number="003"
-              question="What are you currently working on?"
-              answer="Focused on learning NextJS and Solidity. I'm working on a course to help teach how to use the two together in a decentralized app."
-            />
-            <Question
-              number="004"
-              question="Who is your favorite Marvel hero?"
-              answer="I am a huge fan of The Punisher, Daredevil, and Captain America."
-            />
-          </div>
+        </div>
+        <div className="faq-section">
+          <h2 className="blue-text">F.A.Q</h2>
+          <Question
+            number="001"
+            question="Where are you from?"
+            answer="I am from Afghanistan. I live in the United States. "
+          />
+          <Question
+            number="002"
+            question="When did you start programming?"
+            answer="I started programming January 2018 with an introductory CS course at my University. My first programming language was technically JavaScript, but through a library called p5.js."
+          />
+          <Question
+            number="003"
+            question="What are you currently working on?"
+            answer="Focused on learning NextJS and Solidity. I'm working on a course to help teach how to use the two together in a decentralized app."
+          />
+          <Question
+            number="004"
+            question="Who is your favorite Marvel hero?"
+            answer="I am a huge fan of The Punisher, Daredevil, and Captain America."
+          />
         </div>
       </section>
     </main>
