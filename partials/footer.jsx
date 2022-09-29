@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="wrapper">
         <div>
           <p className="contact-text">
-            I am <span className="highlighted-text">always advocating</span> for
+            I am <span className="highlighted-text">always <br></br> advocating</span> for
             others.
           </p>
           <button className="button email-button">

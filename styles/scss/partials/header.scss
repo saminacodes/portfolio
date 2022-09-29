@@ -6,7 +6,7 @@ header.header {
  width: 100%;
  margin: 0 auto;
  margin-top: 30px;
- 
+
  .logo {
   font-size: 1.5rem;
  }
@@ -17,11 +17,11 @@ header.header {
     justify-content: space-between;
   }
 
-  .nav-list {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-  }
+  // .nav-list {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 24px;
+  // }
 
   .hamburger {
     // display: none;

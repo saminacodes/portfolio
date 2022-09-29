@@ -5,20 +5,16 @@ import Menu from "./menu";
 
 export default function Header() {
   const buttonRef = useRef(null);
-  const menuRef = useRef(null);
+  const headerRef = useRef(null);
 
-  function activeMenu() {
+  function toggleMenu() {
     buttonRef.current.classList.toggle("is-active");
-    // menuRef.current
-    //   .querySelector(".mobile-menu")
-    //   .classList.toggle("active-menu");
-  }
+    let menu = headerRef.current.querySelector('.menu');
+    let body = document.querySelector('body');
+    console.log(body);
 
-  function closeMenu() {
-    buttonRef.current.classList.remove("is-active");
-    menuRef.current
-      .querySelector(".mobile-menu")
-      .classList.remove("active-menu");
+    menu.classList.toggle('active-menu');
+    body.classList.toggle('active-menu');
   }
 
   // const router = useRouter();
@@ -37,7 +33,7 @@ export default function Header() {
   // }, [router.asPath]);
 
   return (
-    <header id="main-header" className="header">
+    <header id="main-header" className="header" ref={headerRef}>
       <div className="wrapper">
         <nav>
           <div className="logo">
@@ -49,7 +45,7 @@ export default function Header() {
             className="hamburger hamburger--collapse"
             type="button"
             ref={buttonRef}
-            onClick={activeMenu}
+            onClick={toggleMenu}
           >
             <span className="hamburger-box">
               <span className="hamburger-inner"></span>
