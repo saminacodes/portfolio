@@ -3,8 +3,8 @@ footer#footer {
   height: auto;
 
   .contact-text {
-    font-size: clamp(1.5rem, 10vw, 4rem);
-    max-width: 40%;
+    font-size: clamp(3rem, 10vw, 4rem);
+    line-height: 1.15;
     span {
       color: var(--pastel-purple);
     }
