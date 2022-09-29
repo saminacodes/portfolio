@@ -41,7 +41,7 @@ export const CustomSections = (props) => {
             {props.imageLink && (
               <Image
                 src={props.imageLink}
-                layout="intrinsic"
+                layout="responsive"
                 width={480}
                 height={480}
                 objectFit="cover"

@@ -22,7 +22,7 @@
   .about-section,
   .technologies-section,
   .faq-section {
-    margin-bottom: 250px;
+    margin-bottom: 180px;
 
     @media screen and (max-width: 768px) {
       margin-bottom: 150px;
@@ -30,6 +30,9 @@
   }
 
   .main-hero {
+    .red-text {
+      text-align: left;
+    }
     @media screen and (max-width: 768px) {
       .description {
         max-width: unset !important;
@@ -38,6 +41,9 @@
   }
 
   .about-section {
+    .yellow-text {
+      text-align: left;
+    }
     .content-container {
       max-width: max-content;
       margin-left: auto;

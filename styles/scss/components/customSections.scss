@@ -1,15 +1,12 @@
 section.block.hero {
   min-height: 640px;
-  margin-bottom: 0px;
   padding-bottom: 10px;
-
-  @media screen and (max-width: 1440px) {
-    margin-bottom: 0px;
-  }
+  margin-bottom: 3vmax;
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 0px;
+    margin-bottom: 7vmax;
     padding-bottom: 40px;
+    min-height: unset;
   }
 
   .row {
@@ -17,7 +14,7 @@ section.block.hero {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 7vmax;
 
     @media screen and (max-width: 768px) {
       flex-direction: column-reverse;
@@ -55,6 +52,16 @@ section.block.hero {
     width: auto;
     height: auto;
     position: relative;
+    width: 50%;
+    height: 50%;
+    max-width: 480px;
+    max-height: 480px;
+    aspect-ratio: 1;
+
+    @media screen and (max-width: 768px) {
+      width: 75%;
+      height: 75%;
+    }
 
     .bg-square {
       width: 100%;
