@@ -1,81 +1,73 @@
 .about {
-    h2 {
-        font-size: clamp(2.5rem, 10vw, 6rem);
+  h2 {
+    font-size: clamp(2.5rem, 10vw, 6rem);
 
-        @media screen and (max-width: 768px) {
-          text-align: center;
-        }
+    @media screen and (max-width: 768px) {
+      text-align: center;
     }
+  }
 
-    .main-title, .description {
-      @media screen and (max-width: 768px) {
-        width: 100%;
-        margin: 0 auto;
+  .main-title,
+  .description {
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .about-text {
+    font-size: 1.5rem;
+    max-width: 55ch;
+  }
+
+  .about-section,
+  .technologies-section,
+  .faq-section {
+    margin-bottom: 250px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 150px;
+    }
+  }
+
+  .main-hero {
+    @media screen and (max-width: 768px) {
+      .description {
+        max-width: unset !important;
       }
     }
+  }
 
-
-    .about-text {
-        font-size: 1.5rem;
+  .about-section {
+    .content-container {
+      max-width: max-content;
+      margin-left: auto;
     }
+  }
 
-    .faq {
-        display: flex;
-        flex-direction: row;
-        gap: 300px;
-        align-items: center;
-        border-bottom: 1px solid var(--pastel-blue);
+  .technologies-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 
-        @media screen and (max-width: 1440px) {
-          margin-bottom: 0px;
-        }
-      
-        @media screen and (max-width: 768px) {
-          flex-direction: column;
-          gap: 10px;
-          align-items: baseline;
-          margin-bottom: 25px;
-        }
+    svg {
+      min-width: 44px;
+      min-height: 44px;
+      max-width: 120px;
+      max-height: 120px;
+      height: auto;
+      width: 7vw;
     }
-
-    .faq-title {
-        font-family: var(--body);
-        font-size: clamp(1.5rem, 10vw, 3rem);
-        font-weight: normal;
-    }
-
-    .faq-text {
-        font-size: 1.5rem;
-        display: none;
-        overflow: hidden;
-    }
-
-    .about-section, .technologies-section, .faq-section {
-      margin-bottom: 250px;
-
-      @media screen and (max-width: 768px) {
-        margin-bottom: 150px;
-      }
-    }
-    
-    .about-section {
-      max-width: 120ch;
-    }
-    .technologies-section {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      align-items: center;
-    }
-
-
-    
     .tech-logos {
       margin-top: 36px;
-    }
-
-    .tech-logos {
       display: flex;
-      gap: 24px;
+      gap: 2.5vw;
     }
+  }
+
+  .faq-section {
+    .faq-container {
+      margin-top: 2rem;
+    }
+  }
 }

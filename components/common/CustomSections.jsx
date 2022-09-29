@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 export const CustomSections = (props) => {
+  // Props: style, row, textColor for h2, titleType for h2, title for h2,
   return (
     <section className={`block hero ${props.style}`}>
       <div className="wrapper">

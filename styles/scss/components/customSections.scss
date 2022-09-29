@@ -1,5 +1,4 @@
 section.block.hero {
-  overflow: hidden;
   min-height: 640px;
   margin-bottom: 0px;
   padding-bottom: 10px;
@@ -103,6 +102,7 @@ section.block.hero {
     }
   }
 
+  // "style" Props
   &.main-hero {
     margin-top: 120px;
     h2 {
@@ -115,6 +115,7 @@ section.block.hero {
     }
   }
 
+  // "style" Props
   &.secondary-hero {
     .content-container {
       h2 {
