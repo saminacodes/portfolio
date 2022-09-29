@@ -1,7 +1,19 @@
 .about {
     h2 {
         font-size: clamp(2.5rem, 10vw, 6rem);
+
+        @media screen and (max-width: 768px) {
+          text-align: center;
+        }
     }
+
+    .main-title, .description {
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
 
     .about-text {
         font-size: 1.5rem;
@@ -13,11 +25,22 @@
         gap: 300px;
         align-items: center;
         border-bottom: 1px solid var(--pastel-blue);
+
+        @media screen and (max-width: 1440px) {
+          margin-bottom: 0px;
+        }
+      
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          gap: 10px;
+          align-items: baseline;
+          margin-bottom: 25px;
+        }
     }
 
     .faq-title {
         font-family: var(--body);
-        font-size: 3rem;
+        font-size: clamp(1.5rem, 10vw, 3rem);
         font-weight: normal;
     }
 
@@ -27,8 +50,12 @@
         overflow: hidden;
     }
 
-    .about-section, .technologies-section {
+    .about-section, .technologies-section, .faq-section {
       margin-bottom: 250px;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 150px;
+      }
     }
     
     .about-section {
@@ -40,6 +67,8 @@
       align-content: center;
       align-items: center;
     }
+
+
     
     .tech-logos {
       margin-top: 36px;
