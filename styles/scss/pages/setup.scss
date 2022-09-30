@@ -1,24 +1,41 @@
 .setup {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
+    padding-top: 125px;
+    padding-bottom: 125px;
+
+    h2 {
+        font-size: 3rem;
+        
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
 
     table {
         border-collapse: collapse;
         width: 1000px;
         margin-bottom: 1rem;
+        margin: auto;
     }
     th {
         font-family: var(--title);
         text-align: left;
         color: white;
+        font-size: 2rem;
     }
     td {
         color: white;
         font-family: var(--body);
         border: 1px solid white;
-        padding: 8px;
+        padding: 8px 0px;
         width: auto;
+        border-left: none;
+        border-right: none;
+        font-size: 1.5rem;
     }
     
     .category {

@@ -3,34 +3,24 @@ import { SetupItem } from "../components/common/SetupItem";
 export default function SetupPage() {
   return (
     <main id="setup" className="setup">
-      <section className="wrapper">
+      <section className="wrapper specs">
         <h3>Disclaimer: This page contains affiliate links.</h3>
-        <h2 className="red-text">Specs</h2>
+        <h2 className="red-text">Specs - MacBook Pro 16" 2021</h2>
         <table>
-          <tr>
-            <th>MacBook Pro (16-inch, 2021)</th>
-          </tr>
           <SetupItem category="CPU" item="10-Core" />
           <SetupItem category="GPU" item="32-Core" />
           <SetupItem category="Memory" item="64GB" />
           <SetupItem category="Storage" item="1TB" />
         </table>
+      </section>
+      <section className="wrapper peripherals">
         <h2 className="yellow-text">Peripherals</h2>
         <table>
-          <tr>
-            <th>Monitors</th>
-          </tr>
           <SetupItem
             category="Main Monitor"
             item="LG 32&#39; UltraFine Display Ergo"
           />
           <SetupItem category="Secondary Monitor" item="LG 27&#39; UHD 4K" />
-        </table>
-        <table>
-          <tr>
-            <th>Audio</th>
-          </tr>
-
           <SetupItem category="Microphone" item="Shure SM7B" />
           <SetupItem category="Audio Interface" item="Focusrite Scarlett 2i2" />
           <SetupItem
@@ -45,12 +35,6 @@ export default function SetupPage() {
           />
           <SetupItem category="Speaker" item="Kanto YU2" />
           <SetupItem category="Headphones" item="Sennheiser HD579" />
-        </table>
-
-        <table>
-          <tr>
-            <th>Camera</th>
-          </tr>
           <SetupItem
             category="Camera"
             item="Sony a6000"
@@ -66,11 +50,6 @@ export default function SetupPage() {
             item="Elgato Key Light"
             itemLink="https://amzn.to/3SfsFj2"
           />
-        </table>
-        <table>
-          <tr>
-            <th>I/O</th>
-          </tr>
           <SetupItem
             category="Docking Station"
             item="Corsair Thunderbolt TBT"
@@ -83,12 +62,13 @@ export default function SetupPage() {
           />
           <SetupItem category="Mouse" item="Apple Magic Mouse 2 - Space Grey" />
         </table>
-
+      </section>
+      <section className="wrapper desk">
         <h2 className="green-text">Desk/Accessories</h2>
         <table>
-          <tr>
-            <th>Desk</th>
-          </tr>
+          {/* <tr>
+            <th colSpan="3">Desk</th>
+          </tr> */}
           <SetupItem
             category="Desk"
             item="Ergonofis The Shift / Deep Black / 30&#39; X 72&#39;"
@@ -115,11 +95,13 @@ export default function SetupPage() {
             itemLink="https://amzn.to/3RVPNmX"
           />
         </table>
+      </section>
+      <section className="wrapper softwares">
         <h2 className="blue-text">Softwares</h2>
         <table>
-          <tr>
-            <th>Content Creation</th>
-          </tr>
+          {/* <tr>
+            <th colSpan="3">Content Creation</th>
+          </tr> */}
           <SetupItem
             category="Code Editor"
             item="Visual Studio Code"

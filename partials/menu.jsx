@@ -6,12 +6,8 @@ export default function Menu() {
     document
       .querySelector("header button.hamburger")
       .classList.remove("is-active");
-    document
-      .querySelector("header .menu")
-      .classList.remove("active-menu");
-    document
-      .querySelector("body")
-      .classList.remove("active-menu");
+    document.querySelector("header .menu").classList.remove("active-menu");
+    document.querySelector("body").classList.remove("active-menu");
   }
 
   return (
@@ -29,7 +25,11 @@ export default function Menu() {
             </Link>
           </li>
           <li>
-            <Link href="/resource">
+            <Link
+              target="_blank"
+              rel="noreferrer"
+              href="https://saminacodes.notion.site/saminacodes/Resource-Board-7b8fecc85e024022ac1aaaa6450a4ba9"
+            >
               <a onClick={closeMenu}>Education</a>
             </Link>
           </li>

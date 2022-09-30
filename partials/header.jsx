@@ -9,28 +9,13 @@ export default function Header() {
 
   function toggleMenu() {
     buttonRef.current.classList.toggle("is-active");
-    let menu = headerRef.current.querySelector('.menu');
-    let body = document.querySelector('body');
+    let menu = headerRef.current.querySelector(".menu");
+    let body = document.querySelector("body");
     console.log(body);
 
-    menu.classList.toggle('active-menu');
-    body.classList.toggle('active-menu');
+    menu.classList.toggle("active-menu");
+    body.classList.toggle("active-menu");
   }
-
-  // const router = useRouter();
-
-  // useEffect(() => {
-  //   const homeLink = menuRef.current.querySelector(".home-link");
-  //   const setupLink = menuRef.current.querySelector(".setup-link");
-
-  //   if (router.asPath === "/") {
-  //     homeLink.classList.add("active");
-  //     setupLink.classList.remove("active");
-  //   } else if (router.asPath === "/setup") {
-  //     homeLink.classList.remove("active");
-  //     setupLink.classList.add("active");
-  //   }
-  // }, [router.asPath]);
 
   return (
     <header id="main-header" className="header" ref={headerRef}>

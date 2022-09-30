@@ -20,7 +20,7 @@ export default function Home() {
         textColor="yellow-text"
         bgColor="bg-yellow"
         imageLink="/images/port-2.png"
-        content="I am an education & partnerships focused developer relations engineer at thirdweb. I primarily work on educating users on how to use thirdweb or partner tools in their decentralized applications."
+        content="I am a developer relations engineer at thirdweb and my areas of focus are program management and education strategy."
         linkText="Join my workshops!"
         link="https://lu.ma/saminacodes"
       ></CustomSections>
@@ -31,7 +31,7 @@ export default function Home() {
         textColor="green-text"
         bgColor="bg-green"
         imageLink="/images/port-3.png"
-        content="From teaching kids web development to teaching developers web3 development, I enjoy creating a wide variety of content easily accessible online."
+        content="From teaching kids web development to teaching developers web3 development, I have ample experience creating a variety of educational content that is accessible online."
         linkText="Learn web3 development!"
         link="https://cookie-project.xyz"
       ></CustomSections>
@@ -43,7 +43,7 @@ export default function Home() {
         textColor="blue-text"
         bgColor="bg-blue"
         imageLink="/images/port-4.png"
-        content="What started as a little illustration turned into a series of comics to portray the day-to-day struggles of being a developer."
+        content="What was once a small illustration is now a series of comics that portray the day-to-day struggles of being a developer."
         linkText="Read my comics!"
         link="https://twitter.com/DarkModeComics"
       ></CustomSections>
