@@ -5,7 +5,7 @@ export default function SetupPage() {
     <main id="setup" className="setup">
       <section className="wrapper specs">
         <h3>Disclaimer: This page contains affiliate links.</h3>
-        <h2 className="red-text">Specs - MacBook Pro 16" 2021</h2>
+        <h2 className="red-text">Specs - MacBook Pro 16&quot; 2021</h2>
         <table>
           <SetupItem category="CPU" item="10-Core" />
           <SetupItem category="GPU" item="32-Core" />
