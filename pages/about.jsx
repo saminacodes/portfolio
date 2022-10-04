@@ -21,19 +21,13 @@ export default function AboutPage() {
           <div className="content-container">
             <h2 className="yellow-text">About</h2>
             <p className="about-text">
-              At work, I am the head of developer relations
-              at thirdweb. In my role, I focus on our
-              education strategy, program management, and
-              partnerships. My passion for education and
-              helping others drove me to create content to
-              help more people get into tech. Outside of
-              work, I enjoy video games, Marvel
-              movies/comics, drawing, and{" "}
-              <a href="https://goodreads.com/saminacodes">
-                reading
-              </a>
-              . I have two goldfish, a common pleco, and a
-              black cat named Saia.{" "}
+              At work, I am the head of developer relations at thirdweb. In my
+              role, I focus on our education strategy, program management, and
+              partnerships. My passion for education and helping others drove me
+              to create content to help more people get into tech. Outside of
+              work, I enjoy video games, Marvel movies/comics, drawing, and{" "}
+              <a href="https://goodreads.com/saminacodes">reading</a>. I have
+              two goldfish, a common pleco, and a black cat named Saia.{" "}
             </p>
           </div>
         </div>
@@ -113,11 +107,7 @@ export default function AboutPage() {
             </g>
             <defs>
               <clipPath id="clip0_110_118">
-                <rect
-                  width="120"
-                  height="120"
-                  fill="white"
-                />
+                <rect width="120" height="120" fill="white" />
               </clipPath>
             </defs>
           </svg>
@@ -152,12 +142,17 @@ export default function AboutPage() {
             <Question
               number="003"
               question="What are you currently working on?"
-              answer="Focused on learning NextJS and Solidity. I'm working on a course to help teach how to use the two together in a decentralized app."
+              answer="Couple of things. Working on a web3 course called Cookie Project. On the side I am learning Next and Solidity."
             />
             <Question
               number="004"
               question="Who is your favorite Marvel hero?"
-              answer="I am a huge fan of The Punisher, Daredevil, and Captain America."
+              answer="I honestly can't pick one. I am a huge fan of The Punisher, Daredevil, Moon Knight, Ms. Marvel and Captain America."
+            />
+            <Question
+              number="005"
+              question="How can I contact you?"
+              answer="I am not available for any personal requests or speaking opportunities at this time. For any inquiries related to thirdweb, please join the official thirdweb discord server. [https://discord.gg/thirdweb]"
             />
           </div>
         </div>
