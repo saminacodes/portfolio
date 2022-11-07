@@ -148,8 +148,11 @@ export default function AboutPage() {
               number="004"
               question="What is your profile pic from?"
               answer={[
-                "It was an art piece commissioned  favorite artist, ",
-                <a key="test" href="https://twitter.com/YungKhan">
+                "It is an art piece created by my favorite artist, ",
+                <a
+                  key="test"
+                  href="https://twitter.com/YungKhan/status/1583982316820779010?s=20&t=MGGLiBsL8kjQXWn7I1RsTg"
+                >
                   YungKhan.
                 </a>,
               ]}
