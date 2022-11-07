@@ -148,8 +148,10 @@ export default function AboutPage() {
               number="004"
               question="What is your profile pic from?"
               answer={[
-                "It was an art piece created for me by my favorite artist, ",
-                <a href="https://twitter.com/YungKhan">YungKhan.</a>,
+                "It was an art piece commissioned  favorite artist, ",
+                <a key="test" href="https://twitter.com/YungKhan">
+                  YungKhan.
+                </a>,
               ]}
             />
             <Question
@@ -157,7 +159,7 @@ export default function AboutPage() {
               question="How can I contact you?"
               answer={[
                 "I am intentionally impossible to reach. If you have any inquiries related to thirdweb, please ",
-                <a href="https://discord.gg/thirdweb">
+                <a key="test2" href="https://discord.gg/thirdweb">
                   join the official thirdweb discord server.
                 </a>,
               ]}
