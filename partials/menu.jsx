@@ -20,8 +20,8 @@ export default function Menu() {
             </Link>
           </li>
           <li>
-            <Link href="/about">
-              <a onClick={closeMenu}>About</a>
+            <Link href="/setup">
+              <a onClick={closeMenu}>Setup</a>
             </Link>
           </li>
           <li>
@@ -30,12 +30,22 @@ export default function Menu() {
               rel="noreferrer"
               href="https://saminacodes.notion.site/saminacodes/Resource-Board-7b8fecc85e024022ac1aaaa6450a4ba9"
             >
-              <a onClick={closeMenu}>Education</a>
+              <a onClick={closeMenu}>Resources</a>
             </Link>
           </li>
+          {/* <li>
+            <Link
+              target="_blank"
+              rel="noreferrer"
+              href="https://ko-fi.com/saminacodes/shop"
+            >
+              <a onClick={closeMenu}>Cheatsheets</a>
+            </Link>
+          </li> */}
+
           <li>
-            <Link href="/setup">
-              <a onClick={closeMenu}>Setup</a>
+            <Link href="/about">
+              <a onClick={closeMenu}>About</a>
             </Link>
           </li>
         </ul>

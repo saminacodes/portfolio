@@ -10,7 +10,12 @@ export default function Footer() {
             <span className="highlighted-text"> dark mode </span> community.
           </p>
           <button className="button discord-button">
-            <a className="discord-button" href="https://discord.gg/NbDtMMBhH6">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className="discord-button"
+              href="https://discord.gg/NbDtMMBhH6"
+            >
               <span>Join discord!</span>
               {
                 <svg

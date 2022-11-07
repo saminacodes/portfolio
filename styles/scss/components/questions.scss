@@ -44,4 +44,13 @@
     line-height: 1.5;
     margin-top: 2rem;
   }
+
+  a {
+    color: var(--pastel-blue);
+    cursor: pointer;
+  }
+
+  a:hover {
+    opacity: 70%;
+  }
 }

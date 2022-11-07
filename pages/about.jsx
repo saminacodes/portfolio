@@ -146,13 +146,21 @@ export default function AboutPage() {
             />
             <Question
               number="004"
-              question="Who is your favorite Marvel hero?"
-              answer="I honestly can't pick one. I am a huge fan of The Punisher, Daredevil, Moon Knight, Ms. Marvel and Captain America."
+              question="What is your profile pic from?"
+              answer={[
+                "It was an art piece created for me by my favorite artist, ",
+                <a href="https://twitter.com/YungKhan">YungKhan.</a>,
+              ]}
             />
             <Question
               number="005"
               question="How can I contact you?"
-              answer="I am not available for any personal requests or speaking opportunities at this time. For any inquiries related to thirdweb, please join the official thirdweb discord server. [https://discord.gg/thirdweb]"
+              answer={[
+                "I am intentionally impossible to reach. If you have any inquiries related to thirdweb, please ",
+                <a href="https://discord.gg/thirdweb">
+                  join the official thirdweb discord server.
+                </a>,
+              ]}
             />
           </div>
         </div>
