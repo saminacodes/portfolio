@@ -21,7 +21,7 @@ export default function Menu() {
           </li>
           <li>
             <Link href="/setup">
-              <a onClick={closeMenu}>Setup</a>
+              <a onClick={closeMenu}>Desk Setup</a>
             </Link>
           </li>
           <li>
