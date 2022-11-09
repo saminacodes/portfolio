@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="wrapper">
         <div>
           <p className="contact-text">
-            Be a part of the <br></br>
+            Be a part of the
             <span className="highlighted-text"> dark mode </span> community.
           </p>
           <button className="button discord-button">
