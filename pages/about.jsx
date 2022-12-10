@@ -24,10 +24,12 @@ export default function AboutPage() {
               At work, I am the head of developer relations at thirdweb. In my
               role, I focus on management, building courses, and creating
               programs. My passion for education and helping others drove me to
-              create content to help more people get into tech. Outside of work,
-              I enjoy video games, Marvel movies/comics, drawing, and{" "}
-              <a href="https://goodreads.com/saminacodes">reading</a>. I have
-              two goldfish, a common pleco, and a black cat named Saia.{" "}
+              create content to help more people get into tech. I am driven by a
+              mission to make tech education more accessible globally. <br></br>
+              <br></br>Outside of work, I am fairly introverted. To unwind, I
+              play video games, watch movies, draw comics, or{" "}
+              <a href="https://goodreads.com/saminacodes">read</a>. I have two
+              goldfish, a common pleco, and a black cat named Saia.{" "}
             </p>
           </div>
         </div>

@@ -19,15 +19,19 @@ export default function Menu() {
               <a onClick={closeMenu}>Home</a>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/setup">
               <a onClick={closeMenu}>Setup</a>
             </Link>
-          </li>
-
+          </li> */}
           <li>
             <Link href="/about">
               <a onClick={closeMenu}>About</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://samina.dev">
+              <a onClick={closeMenu}>Blog</a>
             </Link>
           </li>
         </ul>
