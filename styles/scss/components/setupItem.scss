@@ -1,6 +1,10 @@
 .table-row {
-    border: none;
-    .category {
-        max-width: 120px;
-    }
+  border: none;
+  .category {
+    max-width: 120px;
+  }
+
+  td {
+    font-size: clamp(0.5rem, 10vw, 1rem);
+  }
 }

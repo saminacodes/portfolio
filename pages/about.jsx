@@ -22,10 +22,10 @@ export default function AboutPage() {
             <h2 className="yellow-text">About</h2>
             <p className="about-text">
               At work, I am the head of developer relations at thirdweb. In my
-              role, I focus on our education strategy, program management, and
-              partnerships. My passion for education and helping others drove me
-              to create content to help more people get into tech. Outside of
-              work, I enjoy video games, Marvel movies/comics, drawing, and{" "}
+              role, I focus on management, building courses, and creating
+              programs. My passion for education and helping others drove me to
+              create content to help more people get into tech. Outside of work,
+              I enjoy video games, Marvel movies/comics, drawing, and{" "}
               <a href="https://goodreads.com/saminacodes">reading</a>. I have
               two goldfish, a common pleco, and a black cat named Saia.{" "}
             </p>
@@ -142,13 +142,27 @@ export default function AboutPage() {
             <Question
               number="003"
               question="What are you currently working on?"
-              answer="Couple of things. Working on a web3 course called Cookie Project. On the side I am learning Next and Solidity."
+              answer="Quite a bit- hacking on Dark Mode Comics, Cookie Project, and a fun recipe website. For languages, I am trying to learn both Python and Solidity."
             />
             <Question
               number="004"
+              question="Can you teach me how to code?"
+              answer={[
+                "No, but I have curated a ",
+                <a
+                  key="test2"
+                  href="https://saminacodes.notion.site/Resource-Board-7b8fecc85e024022ac1aaaa6450a4ba9"
+                >
+                  list of my favorite resources
+                </a>,
+                " on Notion. Feel free to duplicate it to your notes. ",
+              ]}
+            />
+            <Question
+              number="005"
               question="What is your profile pic from?"
               answer={[
-                "It was an art piece I commissioned from my favorite, ",
+                "It was an art piece I commissioned from my favorite artist, ",
                 <a
                   key="test"
                   href="https://twitter.com/YungKhan/status/1583982316820779010?s=20&t=MGGLiBsL8kjQXWn7I1RsTg"
@@ -158,7 +172,7 @@ export default function AboutPage() {
               ]}
             />
             <Question
-              number="005"
+              number="006"
               question="How can I contact you?"
               answer={[
                 "I am intentionally impossible to reach. If you have any inquiries related to thirdweb, please ",

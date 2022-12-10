@@ -20,9 +20,9 @@ export default function Home() {
         textColor="yellow-text"
         bgColor="bg-yellow"
         imageLink="/images/port-2.png"
-        content="I am a developer relations engineer at thirdweb and my areas of focus are program management and education strategy."
-        linkText="Join my workshops!"
-        link="https://lu.ma/saminacodes"
+        content="I am a developer relations engineer at thirdweb and my areas of focus are course building and strategy."
+        linkText="Check out thirdweb!"
+        link="https://thirdweb.com"
       ></CustomSections>
       <CustomSections
         style="secondary-hero"

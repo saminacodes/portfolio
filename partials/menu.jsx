@@ -21,27 +21,9 @@ export default function Menu() {
           </li>
           <li>
             <Link href="/setup">
-              <a onClick={closeMenu}>Desk Setup</a>
+              <a onClick={closeMenu}>Setup</a>
             </Link>
           </li>
-          <li>
-            <Link
-              target="_blank"
-              rel="noreferrer"
-              href="https://saminacodes.notion.site/saminacodes/Resource-Board-7b8fecc85e024022ac1aaaa6450a4ba9"
-            >
-              <a onClick={closeMenu}>Resources</a>
-            </Link>
-          </li>
-          {/* <li>
-            <Link
-              target="_blank"
-              rel="noreferrer"
-              href="https://ko-fi.com/saminacodes/shop"
-            >
-              <a onClick={closeMenu}>Cheatsheets</a>
-            </Link>
-          </li> */}
 
           <li>
             <Link href="/about">
