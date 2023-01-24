@@ -26,14 +26,14 @@ export default function Home() {
       ></CustomSections>
       <CustomSections
         style="secondary-hero"
-        title="Tech Educator"
+        title="Content Creator"
         titleType="secondary-title"
         textColor="green-text"
         bgColor="bg-green"
         imageLink="/images/port-3.png"
-        content="From teaching kids web development to teaching developers web3 development, I have ample experience creating a variety of educational content that is accessible online."
-        linkText="Learn web3 development!"
-        link="https://cookie-project.xyz"
+        content="I routinely update my tech-focused blog where I discuss topics such as developer relations, frontend and blockchain development, and productivity"
+        linkText="Read my blog!"
+        link="https://samina.dev"
       ></CustomSections>
       <CustomSections
         style="secondary-hero"
