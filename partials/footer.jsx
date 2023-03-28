@@ -6,8 +6,8 @@ export default function Footer() {
       <div className="wrapper">
         <div>
           <p className="contact-text">
-            Download free coding <span>cheat sheets</span>
-            on my Ko-Fi Shop
+            Download free coding <span> cheat sheets </span>
+            on Ko-fi
           </p>
           <button className="button discord-button">
             <a
