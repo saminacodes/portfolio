@@ -10,7 +10,7 @@ export default function Home() {
         textColor="red-text"
         bgColor="bg-red"
         imageLink="/images/port-1.png"
-        content="Developer Relations Engineer, Tech Educator, and Founder of Dark Mode Comics."
+        content="Developer Relations Engineer, Content Creator, and Founder of Dark Mode Comics."
       ></CustomSections>
       <CustomSections
         style="secondary-hero"
@@ -45,7 +45,7 @@ export default function Home() {
         imageLink="/images/port-4.png"
         content="What was once a small illustration is now a series of comics that portray the day-to-day struggles of being a developer."
         linkText="Read my comics!"
-        link="https://twitter.com/DarkModeComics"
+        link="https://instagram.com/DarkModeComix"
       ></CustomSections>
     </main>
   );
