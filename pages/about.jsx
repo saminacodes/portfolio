@@ -144,7 +144,7 @@ export default function AboutPage() {
             <Question
               number="003"
               question="What are you currently working on?"
-              answer="Quite a bit- hacking on Dark Mode Comics, Cookie Project, and a fun recipe website. For languages, I am trying to learn both Python and Solidity."
+              answer="Learning Python. I don't have a real reason why I just like it. "
             />
             <Question
               number="004"
