@@ -1,5 +1,5 @@
 # WELCOME!
-Thank you Kevin Canlas for this amazing template ~ I totally just stole this code from him woops
+Thank you Kevin Canlas for this amazing template and for designing my website. And for debugging my bad CSS. I owe you one. 
 
 
 ## Getting Started

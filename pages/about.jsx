@@ -13,8 +13,7 @@ export default function AboutPage() {
         textColor="red-text"
         bgColor="bg-red"
         imageLink="/images/samina.jpg"
-        content="My name is Samina and I am just another nerd doing nerd things on the
-          internet."
+        content="My name is Samina and I just want to make you smile."
       />
       <section className="about-section">
         <div className="wrapper">
