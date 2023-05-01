@@ -18,14 +18,14 @@ export default function AboutPage() {
           <div className="content-container">
             <h2 className="yellow-text">About</h2>
             <p className="about-text">
-              I'm the Head of Developer Relations at{" "}
+              I am the Head of Developer Relations at{" "}
               <a className="about-link" href="https://thirdweb.com">
                 thirdweb
               </a>
-              , where I manage our team, build courses, and create programs. I'm
-              passionate about education and helping others, so I create content
-              to make tech education more accessible. <br />
-              <br /> When I'm not working, I'm pretty introverted and like to
+              , where I manage our team, build courses, and create programs. I
+              am passionate about education and helping others, so I create
+              content to make tech education more accessible. <br />
+              <br /> When I am not working, I am pretty introverted and like to
               unwind by playing{" "}
               <a
                 className="about-link"
