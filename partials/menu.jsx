@@ -38,7 +38,7 @@ export default function Menu() {
         <div className="footer-socials">
           <Socials username="saminacodes"></Socials>
           <p className="copyright">
-            &copy; 2022 saminacodes | All Rights Reserved
+            &copy; 2023 saminacodes | All Rights Reserved
           </p>
         </div>
       </div>

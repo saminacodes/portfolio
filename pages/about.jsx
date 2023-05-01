@@ -2,8 +2,6 @@ import { CustomSections } from "../components/common/CustomSections";
 import { Question } from "../components/common/Questions";
 
 export default function AboutPage() {
-  //TODO:
-  // write a better bio
   return (
     <main id="about" className="about">
       <CustomSections
@@ -13,22 +11,50 @@ export default function AboutPage() {
         textColor="red-text"
         bgColor="bg-red"
         imageLink="/images/samina.jpg"
-        content="My name is Samina and I just want to make you smile."
+        content="My name is Samina and I just want to make you smile. ʕ•ᴥ•ʔ"
       />
       <section className="about-section">
         <div className="wrapper">
           <div className="content-container">
             <h2 className="yellow-text">About</h2>
             <p className="about-text">
-              At work, I am the head of developer relations at thirdweb. In my
-              role, I focus on management, building courses, and creating
-              programs. My passion for education and helping others drove me to
-              create content to help more people get into tech. I am driven by a
-              mission to make tech education more accessible globally. <br></br>
-              <br></br>Outside of work, I am fairly introverted. To unwind, I
-              play video games, watch movies, draw comics, or{" "}
-              <a href="https://goodreads.com/saminacodes">read</a>. I have two
-              goldfish, a common pleco, and a black cat named Saia.{" "}
+              I'm the Head of Developer Relations at{" "}
+              <a className="about-link" href="https://thirdweb.com">
+                thirdweb
+              </a>
+              , where I manage our team, build courses, and create programs. I'm
+              passionate about education and helping others, so I create content
+              to make tech education more accessible. <br />
+              <br /> When I'm not working, I'm pretty introverted and like to
+              unwind by playing{" "}
+              <a
+                className="about-link"
+                href="https://www.notion.so/saminacodes/9dbfa93216f14c408ad3d7d447786a7e?v=32741f6af3074ff4a84e7f32a00d9c40&pvs=4"
+              >
+                video games
+              </a>
+              , watching{" "}
+              <a
+                className="about-link"
+                href="https://saminacodes.notion.site/8bf075c550c74c49b0673e0896293081?v=73d58c57e5fd4cdbb915effa4588a9ea"
+              >
+                Korean dramas
+              </a>
+              , drawing, cooking, or{" "}
+              <a
+                className="about-link"
+                href="https://goodreads.com/saminacodes"
+              >
+                reading
+              </a>
+              . I also have two goldfish and a black cat,{" "}
+              <a
+                className="about-link"
+                href="https://instagram.com/darkmodekitty"
+              >
+                Saia
+              </a>
+              , who keep me company.
             </p>
           </div>
         </div>
@@ -143,7 +169,7 @@ export default function AboutPage() {
             <Question
               number="003"
               question="What are you currently working on?"
-              answer="Learning Python. I don't have a real reason why I just like it. "
+              answer="Learning Python. I don't have a real reason why. I just like it. "
             />
             <Question
               number="004"
@@ -161,7 +187,7 @@ export default function AboutPage() {
             />
             <Question
               number="005"
-              question="What is your profile pic from?"
+              question="Where is your profile pic from?"
               answer={[
                 "It was an art piece I commissioned from my favorite artist, ",
                 <a
