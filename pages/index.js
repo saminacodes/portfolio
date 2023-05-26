@@ -33,7 +33,7 @@ export default function Home() {
         imageLink="/images/port-3.png"
         content="I routinely update my tech-focused blog where I discuss topics such as developer relations, frontend and blockchain development, and productivity"
         linkText="Read my blog!"
-        link="https://samina.dev"
+        link="/blog"
       ></CustomSections>
       <CustomSections
         style="secondary-hero"

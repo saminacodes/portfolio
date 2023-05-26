@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="wrapper">
         <div>
           <p className="contact-text">
-            Download free coding visual <span> cheat sheets </span>
+            Free coding visual <span> cheat sheets </span>
           </p>
           <button className="button discord-button">
             <a
@@ -15,7 +15,7 @@ export default function Footer() {
               className="discord-button"
               href="https://ko-fi.com/saminacodes/shop"
             >
-              <span>Support Me on Ko-fi!</span>
+              <span>Download</span>
             </a>
           </button>
         </div>

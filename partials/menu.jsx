@@ -30,7 +30,7 @@ export default function Menu() {
             </Link>
           </li>
           <li>
-            <Link href="https://samina.dev">
+            <Link href="/blog">
               <a onClick={closeMenu}>Blog</a>
             </Link>
           </li>
