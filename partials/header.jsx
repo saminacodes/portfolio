@@ -22,9 +22,7 @@ export default function Header() {
       <div className="wrapper">
         <nav>
           <div className="logo">
-            <Link href="/">
-              <a>saminacodes</a>
-            </Link>
+            <Link href="/">saminacodes</Link>
           </div>
           <button
             className="hamburger hamburger--collapse"
