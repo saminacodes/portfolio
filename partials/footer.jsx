@@ -6,7 +6,12 @@ export default function Footer() {
       <div className="wrapper">
         <div>
           <p className="contact-text">
-            Free coding visual <span> cheat sheets </span>
+            Free coding{" "}
+            <span>
+              {" "}
+              visual <br />
+              cheat sheets{" "}
+            </span>
           </p>
           <button className="button discord-button">
             <a
