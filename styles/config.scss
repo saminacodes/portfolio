@@ -33,10 +33,10 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
+// ul[role='list'],
+// ol[role='list'] {
+//   list-style: none;
+// }
 
 /* Set core root defaults */
 html:focus-within {
@@ -126,9 +126,9 @@ ul {
   padding: 0;
 }
 
-li {
-  list-style: none;
-}
+// li {
+//   list-style: none;
+// }
 
 button {
   background: none;
@@ -141,8 +141,8 @@ button {
 }
 
 // ##### SCSS IMPORTS ##### //
-@import 'scss/global/_global';
-@import 'scss/pages/_pages';
-@import 'scss/partials/_partials';
-@import 'scss/components/_components';
+@import "scss/global/_global";
+@import "scss/pages/_pages";
+@import "scss/partials/_partials";
+@import "scss/components/_components";
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
