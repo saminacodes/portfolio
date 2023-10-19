@@ -10,17 +10,17 @@ export default function Home() {
         textColor="red-text"
         bgColor="bg-red"
         imageLink="/images/port-1.png"
-        content="Developer Relations Engineer, Content Creator, and Founder of Dark Mode Comics."
+        content="Product Manager, Content Creator, and Founder of Dark Mode Comics."
       ></CustomSections>
       <CustomSections
         style="secondary-hero"
         row="reverse"
-        title="Developer Relations Engineer"
+        title="Product Manager"
         titleType="secondary-title"
         textColor="yellow-text"
         bgColor="bg-yellow"
         imageLink="/images/port-2.png"
-        content="I am a developer relations engineer at thirdweb and my areas of focus are course building and strategy."
+        content="I am product manager at thirdweb focused on improving our developer experience."
         linkText="Check out thirdweb!"
         link="https://thirdweb.com"
       ></CustomSections>
@@ -31,7 +31,7 @@ export default function Home() {
         textColor="green-text"
         bgColor="bg-green"
         imageLink="/images/port-3.png"
-        content="I routinely update my tech-focused blog where I discuss topics such as developer relations, frontend and blockchain development, and productivity"
+        content="I routinely update my tech-focused blog where I discuss topics such as developer experience, frontend and blockchain development, and productivity"
         linkText="Read my blog!"
         link="/blog"
       ></CustomSections>
