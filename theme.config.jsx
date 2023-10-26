@@ -14,8 +14,12 @@ export default {
   darkMode: false,
   navs: [
     {
-      url: "https://hashnode.com/@saminacodes",
-      name: "Read on Hashnode",
+      url: "/tags/Career",
+      name: "Career",
+    },
+    {
+      url: "/tags/Organization",
+      name: "Organization",
     },
   ],
 };
