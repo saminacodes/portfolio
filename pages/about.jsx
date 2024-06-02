@@ -23,11 +23,11 @@ export default function AboutPage() {
                 thirdweb
               </a>
               , where I focus on improving the developer experience across our
-              dashboard, SDKs, CLI, and documentation. I am passionate about
-              education and helping others, so I create content to make tech
-              education more accessible. <br />
-              <br /> When I am not working, I am pretty introverted and like to
-              unwind by playing{" "}
+              dashboard, support experience, and documentation. I am passionate
+              about education and helping others, so I create content to make
+              tech education more accessible. <br />
+              <br /> When I am not working, I am fairly introverted and prefer
+              to unwind by playing{" "}
               <a
                 className="about-link"
                 href="https://www.notion.so/saminacodes/9dbfa93216f14c408ad3d7d447786a7e?v=32741f6af3074ff4a84e7f32a00d9c40&pvs=4"
@@ -41,21 +41,14 @@ export default function AboutPage() {
               >
                 Korean dramas
               </a>
-              , drawing, cooking, or{" "}
+              , drawing, cooking,{" "}
               <a
                 className="about-link"
                 href="https://goodreads.com/saminacodes"
               >
                 reading
               </a>
-              . I also have two goldfish and a black cat,{" "}
-              <a
-                className="about-link"
-                href="https://instagram.com/darkmodekitty"
-              >
-                Saia
-              </a>
-              , who keep me company.
+              , or learning how to play the piano.
             </p>
           </div>
         </div>
@@ -170,7 +163,7 @@ export default function AboutPage() {
             <Question
               number="003"
               question="What are you currently working on?"
-              answer="Learning Python. I don't have a real reason why. I just like it. "
+              answer="Learning cryptography. It's pretty cool -- lots of math. Also, Python."
             />
             <Question
               number="004"

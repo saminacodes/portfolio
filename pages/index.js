@@ -20,7 +20,7 @@ export default function Home() {
         textColor="yellow-text"
         bgColor="bg-yellow"
         imageLink="/images/port-2.png"
-        content="I am product manager at thirdweb focused on improving our developer experience."
+        content="I am a product manager at thirdweb focused on improving our developer experience."
         linkText="Check out thirdweb!"
         link="https://thirdweb.com"
       ></CustomSections>
@@ -31,9 +31,9 @@ export default function Home() {
         textColor="green-text"
         bgColor="bg-green"
         imageLink="/images/port-3.png"
-        content="I routinely update my tech-focused blog where I discuss topics such as developer experience, frontend and blockchain development, and productivity"
+        content="Posts about developer experience, product management, frontend, and blockchain development."
         linkText="Read my blog!"
-        link="/blog"
+        link="https://saminacodes.medium.com/"
       ></CustomSections>
       <CustomSections
         style="secondary-hero"
