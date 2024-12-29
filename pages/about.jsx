@@ -28,7 +28,7 @@ export default function AboutPage() {
                 Nebula
               </a>. I am passionate
               about education and helping others, so I sometimes create technical content. <br />
-              <br /> When I am not working, I enjoy playing video games, learning piano, going for a run, practicing hot yoga, and <a className="about-link" href="https://www.goodreads.com/user/show/123932450-samina\">reading</a>."
+              <br /> When I am not working, I enjoy playing video games, learning piano, going for a run, practicing hot yoga, and <a className="about-link" href="https://www.goodreads.com/user/show/123932450-samina\">reading</a>." </p>
           </div>
         </div>
       </section>
