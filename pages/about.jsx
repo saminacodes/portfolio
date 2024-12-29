@@ -26,7 +26,7 @@ export default function AboutPage() {
               <a className="about-link" href="https://thirdweb.com/contracts">
                 smart contracts
               </a>{" "}
-              and our AI tooling,
+              and our AI tooling,{" "}
               <a className="about-link" href="https://thirdweb.com/nebula">
                 Nebula
               </a>
