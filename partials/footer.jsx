@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="footer-socials">
           <Socials username="saminacodes"></Socials>
           <p className="copyright">
-            &copy; 2024 saminacodes | All Rights Reserved
+            &copy; 2025 saminacodes | All Rights Reserved
           </p>
         </div>
       </div>

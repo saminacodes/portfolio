@@ -22,34 +22,13 @@ export default function AboutPage() {
               <a className="about-link" href="https://thirdweb.com">
                 thirdweb
               </a>
-              , where I focus on improving the developer experience across our
-              dashboard, support experience, and documentation. I am passionate
-              about education and helping others, so I create content to make
-              tech education more accessible. <br />
-              <br /> When I am not working, I am fairly introverted and prefer
-              to unwind by playing{" "}
-              <a
-                className="about-link"
-                href="https://www.notion.so/saminacodes/9dbfa93216f14c408ad3d7d447786a7e?v=32741f6af3074ff4a84e7f32a00d9c40&pvs=4"
-              >
-                video games
-              </a>
-              , watching{" "}
-              <a
-                className="about-link"
-                href="https://saminacodes.notion.site/8bf075c550c74c49b0673e0896293081?v=73d58c57e5fd4cdbb915effa4588a9ea"
-              >
-                Korean dramas
-              </a>
-              , drawing, cooking,{" "}
-              <a
-                className="about-link"
-                href="https://goodreads.com/saminacodes"
-              >
-                reading
-              </a>
-              , or learning how to play the piano.
-            </p>
+              , where I focus on <a className="about-link" href="https://thirdweb.com/contracts">
+                smart contracts
+              </a> and our AI tooling,<a className="about-link" href="https://thirdweb.com/nebula">
+                Nebula
+              </a>. I am passionate
+              about education and helping others, so I sometimes create technical content. <br />
+              <br /> When I am not working, I enjoy playing video games, learning piano, going for a run, practicing hot yoga, and <a className="about-link" href="https://www.goodreads.com/user/show/123932450-samina\">reading</a>."
           </div>
         </div>
       </section>
