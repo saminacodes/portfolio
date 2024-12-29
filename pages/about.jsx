@@ -22,13 +22,26 @@ export default function AboutPage() {
               <a className="about-link" href="https://thirdweb.com">
                 thirdweb
               </a>
-              , where I focus on <a className="about-link" href="https://thirdweb.com/contracts">
+              , where I focus on{" "}
+              <a className="about-link" href="https://thirdweb.com/contracts">
                 smart contracts
-              </a> and our AI tooling,<a className="about-link" href="https://thirdweb.com/nebula">
+              </a>{" "}
+              and our AI tooling,
+              <a className="about-link" href="https://thirdweb.com/nebula">
                 Nebula
-              </a>. I am passionate
-              about education and helping others, so I sometimes create technical content. <br />
-              <br /> When I am not working, I enjoy playing video games, learning piano, going for a run, practicing hot yoga, and <a className="about-link" href="https://www.goodreads.com/user/show/123932450-samina\">reading</a>." </p>
+              </a>
+              . I am passionate about education and helping others, so I
+              sometimes create technical content. <br />
+              <br /> When I am not working, I enjoy playing video games,
+              learning piano, going for a run, practicing hot yoga, and{" "}
+              <a
+                className="about-link"
+                href="https://www.goodreads.com/user/show/123932450-samina\"
+              >
+                reading
+              </a>
+              .{" "}
+            </p>
           </div>
         </div>
       </section>
