@@ -22,18 +22,10 @@ export default function AboutPage() {
               <a className="about-link" href="https://thirdweb.com">
                 thirdweb
               </a>
-              , where I focus on{" "}
-              <a className="about-link" href="https://thirdweb.com/contracts">
-                smart contracts
-              </a>{" "}
-              and our AI tooling,{" "}
-              <a className="about-link" href="https://thirdweb.com/nebula">
-                Nebula
-              </a>
-              . I am passionate about education and helping others, so I
-              sometimes create technical content. <br />
+              , where I focus on blockchain and AI development tools.
+              
               <br /> When I am not working, I enjoy playing video games,
-              learning piano, going for a run, practicing hot yoga, and{" "}
+              learning piano, gardening, video games, and{" "}
               <a
                 className="about-link"
                 href="https://www.goodreads.com/user/show/123932450-samina\"
