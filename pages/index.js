@@ -20,7 +20,7 @@ export default function Home() {
         textColor="yellow-text"
         bgColor="bg-yellow"
         imageLink="/images/port-2.png"
-        content="I am a product manager at thirdweb focused on improving our developer experience."
+        content="I am a product manager at thirdweb focused on blockchain and AI."
         linkText="Check out thirdweb!"
         link="https://thirdweb.com"
       ></CustomSections>
@@ -31,9 +31,9 @@ export default function Home() {
         textColor="green-text"
         bgColor="bg-green"
         imageLink="/images/port-3.png"
-        content="Posts about developer experience, product management, frontend, and blockchain development."
-        linkText="Read my blog!"
-        link="https://saminacodes.medium.com/"
+        content="I create content on anything I am learning about- blockchain, AI, and more."
+        linkText="Check out my content!"
+        link="https://instagram.com/saminacodes"
       ></CustomSections>
       <CustomSections
         style="secondary-hero"
@@ -43,7 +43,7 @@ export default function Home() {
         textColor="blue-text"
         bgColor="bg-blue"
         imageLink="/images/port-4.png"
-        content="What was once a small illustration is now a series of comics that portray the day-to-day struggles of being a developer."
+        content="What was once a small illustration is now a series of comics that portray the day-to-day struggles."
         linkText="Read my comics!"
         link="https://instagram.com/DarkModeComix"
       ></CustomSections>

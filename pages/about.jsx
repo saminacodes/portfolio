@@ -128,6 +128,7 @@ export default function AboutPage() {
               fill="#00D8FF"
             />
           </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="39" height="23" fill="none"><path fill="url(#a)" d="M20.223.008c.23.048.447.144.637.283.212.168.375.391.47.645l1.81 4.524a1626.34 1626.34 0 0 0 2.011 5.028c.351.88.7 1.76 1.058 2.636a1.456 1.456 0 0 1 0 1.135l-3.065 7.645c-.203.506-.57.82-1.111.903-.673.101-1.274-.23-1.517-.82-.575-1.415-1.138-2.834-1.705-4.252l-2.883-7.212c-.853-2.14-1.708-4.28-2.564-6.42-.284-.71-.559-1.424-.855-2.128A1.423 1.423 0 0 1 13.5.03c.025-.006.049-.015.072-.022h6.65Z"/><path fill="url(#b)" d="M8.279.008c.075.02.15.039.225.065a1.344 1.344 0 0 1 .85.792c.659 1.634 1.314 3.27 1.966 4.905a39864.963 39864.963 0 0 1 2.953 7.377 1.408 1.408 0 0 1 0 1.094l-1.092 2.724-2.002 4.984a1.407 1.407 0 0 1-1.296.879 1.43 1.43 0 0 1-1.365-.927c-.617-1.566-1.247-3.127-1.87-4.69-.837-2.116-1.678-4.23-2.523-6.343l-2.58-6.453C1.219 3.6.896 2.785.565 1.97A1.42 1.42 0 0 1 1.273.128c.12-.049.245-.09.372-.12H8.28Z"/><path fill="url(#c)" d="M38.036 13.913c-.182.616-.455 1.197-.687 1.79a1369.26 1369.26 0 0 1-2.026 5.064c-.156.386-.314.772-.465 1.16a1.428 1.428 0 0 1-1.328.897 1.424 1.424 0 0 1-1.322-.905l-2.946-7.37-2.548-6.365L24.22 1.95a1.41 1.41 0 0 1 .994-1.915c.027-.006.054-.015.08-.023h6.651c.021.006.041.014.062.019a1.415 1.415 0 0 1 1.036.888 13578.022 13578.022 0 0 1 4.209 10.529c.266.669.563 1.326.781 2.014l.003.451Z"/><defs><linearGradient id="a" x1="11.364" x2="27.384" y1="1.861" y2="17.848" gradientUnits="userSpaceOnUse"><stop stop-color="#FF00A8"/><stop offset="1" stop-color="#6200C6"/></linearGradient><linearGradient id="b" x1="-.574" x2="15.442" y1="1.855" y2="17.839" gradientUnits="userSpaceOnUse"><stop stop-color="#FF00A8"/><stop offset="1" stop-color="#6200C6"/></linearGradient><linearGradient id="c" x1="23.084" x2="39.101" y1="1.855" y2="17.839" gradientUnits="userSpaceOnUse"><stop stop-color="#FF00A8"/><stop offset="1" stop-color="#6200C6"/></linearGradient></defs></svg>
         </div>
       </div>
       <div className="faq-section">
@@ -147,21 +148,14 @@ export default function AboutPage() {
             <Question
               number="003"
               question="What are you currently working on?"
-              answer="Learning cryptography. It's pretty cool -- lots of math. Also, Python."
+              answer="Outside of work, I have been focused a bit more on learning AI and crypto. Taking a break from building anything for some time."
             />
             <Question
               number="004"
               question="Can you teach me how to code?"
-              answer={[
-                "No, but I have curated a ",
-                <a
-                  key="test2"
-                  href="https://saminacodes.notion.site/Resource-Board-7b8fecc85e024022ac1aaaa6450a4ba9"
-                >
-                  list of my favorite resources
-                </a>,
-                " on Notion. Feel free to duplicate it to your notes. ",
-              ]}
+              answer="No, but I created this website called https://resources.technology which you can browse through. 
+              
+              Also, use AI and ask a lot of questions. You have a senior developer in your pocket. "
             />
             <Question
               number="005"
@@ -181,8 +175,8 @@ export default function AboutPage() {
               question="How can I contact you?"
               answer={[
                 "I am intentionally impossible to reach. If you have any inquiries related to thirdweb, please ",
-                <a key="test2" href="https://discord.gg/thirdweb">
-                  join the official thirdweb discord server.
+                <a key="test2" href="https://thirdweb.com/contact-us">
+                  contact our team.
                 </a>,
               ]}
             />
