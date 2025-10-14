@@ -31,7 +31,7 @@ export default function Home() {
         textColor="green-text"
         bgColor="bg-green"
         imageLink="/images/port-3.png"
-        content="I create content on anything I am learning about- blockchain, AI, and more."
+        content="I create content on anything I am learning about."
         linkText="Check out my content!"
         link="https://instagram.com/saminacodes"
       ></CustomSections>
