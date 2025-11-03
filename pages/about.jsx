@@ -25,7 +25,7 @@ export default function AboutPage() {
               , where I focus on blockchain and AI development tools.
               
               <br /> When I am not working, I enjoy playing video games,
-              learning piano, gardening, video games, and{" "}
+              learning piano, gardening, and{" "}
               <a
                 className="about-link"
                 href="https://www.goodreads.com/user/show/123932450-samina\"
