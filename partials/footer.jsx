@@ -6,11 +6,12 @@ export default function Footer() {
       <div className="wrapper">
         <div>
           <p className="contact-text">
-            Free coding{" "}
+            Build apps{" "}
             <span>
               {" "}
-              visual <br />
-              cheat sheets{" "}
+              </br>
+              with Replit
+              {" "}
             </span>
           </p>
           <button className="button discord-button">
@@ -18,16 +19,16 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
               className="discord-button"
-              href="https://ko-fi.com/saminacodes/shop"
+              href="https://replit.com/refer/saminacodes"
             >
-              <span>Download</span>
+              <span>Sign Up</span>
             </a>
           </button>
         </div>
         <div className="footer-socials">
           <Socials username="saminacodes"></Socials>
           <p className="copyright">
-            &copy; 2025 saminacodes | All Rights Reserved
+            &copy; 2026 saminacodes | All Rights Reserved
           </p>
         </div>
       </div>

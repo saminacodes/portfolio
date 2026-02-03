@@ -10,12 +10,12 @@ export default function Home() {
         textColor="red-text"
         bgColor="bg-red"
         imageLink="/images/port-1.png"
-        content="I create things."
+        content="I like to create comics, apps, and robots."
       ></CustomSections>
       <CustomSections
         style="secondary-hero"
         row="reverse"
-        title="Product"
+        title="Product Manager"
         titleType="secondary-title"
         textColor="yellow-text"
         bgColor="bg-yellow"
@@ -26,7 +26,7 @@ export default function Home() {
       ></CustomSections>
       <CustomSections
         style="secondary-hero"
-        title="Eeducational Content"
+        title="Content Creator"
         titleType="secondary-title"
         textColor="green-text"
         bgColor="bg-green"
@@ -38,14 +38,14 @@ export default function Home() {
       <CustomSections
         style="secondary-hero"
         row="reverse"
-        title="Creator DarkModeComics"
+        title="Illustrator DarkModeComics"
         titleType="secondary-title"
         textColor="blue-text"
         bgColor="bg-blue"
         imageLink="/images/port-4.png"
         content="What was once a small illustration is now a series of comics of my day-to-day struggles."
         linkText="Read my comics!"
-        link="https://instagram.com/DarkModeComix"
+        link="https://darkmodecomics.com"
       ></CustomSections>
     </main>
   );
