@@ -10,23 +10,23 @@ export default function Home() {
         textColor="red-text"
         bgColor="bg-red"
         imageLink="/images/port-1.png"
-        content="Product Manager, Content Creator, and Founder of Dark Mode Comics."
+        content="I create things."
       ></CustomSections>
       <CustomSections
         style="secondary-hero"
         row="reverse"
-        title="Product Manager"
+        title="Product"
         titleType="secondary-title"
         textColor="yellow-text"
         bgColor="bg-yellow"
         imageLink="/images/port-2.png"
-        content="I am a product manager at thirdweb focused on blockchain and AI."
+        content="I work at thirdweb where I focus on blockchain and AI."
         linkText="Check out thirdweb!"
         link="https://thirdweb.com"
       ></CustomSections>
       <CustomSections
         style="secondary-hero"
-        title="Content Creator"
+        title="Eeducational Content"
         titleType="secondary-title"
         textColor="green-text"
         bgColor="bg-green"
@@ -38,12 +38,12 @@ export default function Home() {
       <CustomSections
         style="secondary-hero"
         row="reverse"
-        title="Founder DarkModeComics"
+        title="Creator DarkModeComics"
         titleType="secondary-title"
         textColor="blue-text"
         bgColor="bg-blue"
         imageLink="/images/port-4.png"
-        content="What was once a small illustration is now a series of comics that portray the day-to-day struggles."
+        content="What was once a small illustration is now a series of comics of my day-to-day struggles."
         linkText="Read my comics!"
         link="https://instagram.com/DarkModeComix"
       ></CustomSections>
