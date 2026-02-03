@@ -6,12 +6,10 @@ export default function Footer() {
       <div className="wrapper">
         <div>
           <p className="contact-text">
-            Build apps{" "}
+            Build apps
             <span>
-              {" "}
-              </br>
+              <br />
               with Replit
-              {" "}
             </span>
           </p>
           <button className="button discord-button">
