@@ -52,6 +52,7 @@
 
   .about-link {
     color: var(--pastel-yellow);
+    @include hover-opacity;
   }
 
   .technologies-section {

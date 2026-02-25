@@ -1,0 +1,11 @@
+// ===== Shared interaction mixins =====
+
+// Standard link/button hover: dim opacity on hover with a smooth transition.
+// Usage: @include hover-opacity;
+@mixin hover-opacity {
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

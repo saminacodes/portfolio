@@ -1,8 +1,12 @@
 .social-links {
-    display: flex;
-    flex-direction: row;
-  
-    li {
-      margin-right: 1rem;
-    }
+  display: flex;
+  flex-direction: row;
+
+  li {
+    margin-right: 1rem;
   }
+
+  a {
+    @include hover-opacity;
+  }
+}

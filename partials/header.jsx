@@ -1,17 +1,18 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import Menu from "./menu";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const buttonRef = useRef(null);
   const headerRef = useRef(null);
 
   function toggleMenu() {
+    const next = !isMenuOpen;
+    setIsMenuOpen(next);
     buttonRef.current.classList.toggle("is-active");
     let menu = headerRef.current.querySelector(".menu");
     let body = document.querySelector("body");
-    console.log(body);
 
     menu.classList.toggle("active-menu");
     body.classList.toggle("active-menu");
@@ -29,13 +30,16 @@ export default function Header() {
             type="button"
             ref={buttonRef}
             onClick={toggleMenu}
+            aria-label="Toggle navigation"
+            aria-expanded={isMenuOpen}
+            aria-controls="main-menu"
           >
             <span className="hamburger-box">
               <span className="hamburger-inner"></span>
             </span>
           </button>
         </nav>
-        <Menu />
+        <Menu id="main-menu" />
       </div>
     </header>
   );

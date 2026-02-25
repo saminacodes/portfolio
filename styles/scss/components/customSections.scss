@@ -44,11 +44,12 @@ section.block.hero {
     a {
       font-size: 1.25rem;
       margin-top: 1.25em;
+      @include hover-opacity;
     }
   }
 
   .image-container {
-    border: 2px solid white;
+    border: 2px solid var(--white);
     width: auto;
     height: auto;
     position: relative;

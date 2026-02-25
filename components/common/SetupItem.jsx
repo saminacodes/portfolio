@@ -5,7 +5,7 @@ export const SetupItem = (props) => {
       <td className="item">{props.item}</td>
       <td className="item-link">
         {props.itemLink && (
-          <a target="_blank" rel="noreferrer" href={props.itemLink}>
+          <a target="_blank" rel="noreferrer" href={props.itemLink} aria-label={`View ${props.item}`}>
             <svg
               width="40"
               height="40"

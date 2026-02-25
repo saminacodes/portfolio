@@ -140,6 +140,12 @@ button {
   }
 }
 
+/* Focus indicators — keyboard navigation visibility */
+:focus-visible {
+  outline: 2px solid var(--pastel-yellow);
+  outline-offset: 3px;
+}
+
 // ##### SCSS IMPORTS ##### //
 @import 'scss/global/_global';
 @import 'scss/pages/_pages';

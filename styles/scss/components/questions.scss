@@ -4,7 +4,6 @@
   gap: 300px;
   align-items: flex-start;
   border-bottom: 1px solid var(--pastel-blue);
-  cursor: pointer;
 
   @media screen and (max-width: 1440px) {
     margin-bottom: 0px;
@@ -23,20 +22,19 @@
   }
 
   .faq-num {
-    color: white;
+    color: var(--white);
     font-family: var(--title);
     font-size: 1.5rem;
     margin-top: 1em;
   }
 
   .faq-question {
-    color: white;
+    color: var(--white);
     font-family: var(--body);
     list-style-type: none;
     font-size: clamp(2rem, 5vw, 3rem);
     line-height: 1.2;
-    pointer-events: none;
-    // margin-bottom: 0.5em;
+    cursor: pointer;
   }
 
   .faq-answer {
@@ -48,9 +46,6 @@
   a {
     color: var(--pastel-blue);
     cursor: pointer;
-  }
-
-  a:hover {
-    opacity: 70%;
+    @include hover-opacity;
   }
 }

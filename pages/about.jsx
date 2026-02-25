@@ -28,7 +28,7 @@ export default function AboutPage() {
               learning piano, gardening, and{" "}
               <a
                 className="about-link"
-                href="https://www.goodreads.com/user/show/123932450-samina\"
+                href="https://www.goodreads.com/user/show/123932450-samina"
               >
                 reading
               </a>
