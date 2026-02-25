@@ -6,9 +6,5 @@ const withNextra = require("nextra")({
 });
 
 module.exports = withNextra({
-  // Other Next.js configurations
   reactStrictMode: true,
-  experimental: {
-    newNextLinkBehavior: false,
-  },
 });

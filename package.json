@@ -9,8 +9,8 @@
   "dependencies": {
     "hamburgers": "^1.2.1",
     "next": "^13.4.3",
-    "nextra": "^2.6.1",
-    "nextra-theme-blog": "^2.6.1",
+    "nextra": "^3.3.1",
+    "nextra-theme-blog": "^3.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.52.3"

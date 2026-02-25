@@ -19,7 +19,7 @@ export default function Footer() {
               className="discord-button"
               href="https://replit.com/refer/saminacodes"
             >
-              <span>Get $10 in C</span>
+              <span>Get $10 in Credits</span>
             </a>
           </button>
         </div>
