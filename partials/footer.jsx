@@ -12,21 +12,19 @@ export default function Footer() {
               with Replit
             </span>
           </p>
-          <button className="button discord-button">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="discord-button"
-              href="https://replit.com/refer/saminacodes"
-            >
-              <span>Get $10 in Credits</span>
-            </a>
-          </button>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="button discord-button"
+            href="https://replit.com/refer/saminacodes"
+          >
+            <span>Get $10 in Credits</span>
+          </a>
         </div>
         <div className="footer-socials">
           <Socials username="saminacodes"></Socials>
           <p className="copyright">
-            &copy; 2026 saminacodes | All Rights Reserved
+            &copy; {new Date().getFullYear()} saminacodes | All Rights Reserved
           </p>
         </div>
       </div>

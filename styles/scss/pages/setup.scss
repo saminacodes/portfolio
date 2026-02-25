@@ -28,11 +28,11 @@
     th {
         font-family: var(--title);
         text-align: left;
-        color: white;
+        color: var(--white);
         font-size: 2rem;
     }
     td {
-        color: white;
+        color: var(--white);
         font-family: var(--body);
         border: 1px solid white;
         padding: 8px 0px;

@@ -11,17 +11,18 @@ footer#footer {
     max-width: 20ch;
   }
 
-  button {
+  button,
+  a.button {
     margin-top: 2rem;
   }
   .discord-button {
-    display: flex;
+    display: inline-flex;
     gap: 8px;
     align-items: center;
   }
 
   .copyright {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     padding-top: 12px;
   }
 

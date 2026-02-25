@@ -5,10 +5,12 @@ export const Socials = (props) => {
         <a
           target="_blank"
           rel="noreferrer"
+          aria-label="Twitter profile"
           href={`https://twitter.com/${props.username}`}
         >
           <svg
             role="img"
+            aria-hidden="true"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -25,10 +27,12 @@ export const Socials = (props) => {
         <a
           target="_blank"
           rel="noreferrer"
+          aria-label="Instagram profile"
           href={`https://instagram.com/${props.username}`}
         >
           <svg
             role="img"
+            aria-hidden="true"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -45,10 +49,12 @@ export const Socials = (props) => {
         <a
           target="_blank"
           rel="noreferrer"
+          aria-label="LinkedIn profile"
           href={`https://linkedin.com/in/${props.username}`}
         >
           <svg
             role="img"
+            aria-hidden="true"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -65,10 +71,12 @@ export const Socials = (props) => {
         <a
           target="_blank"
           rel="noreferrer"
+          aria-label="GitHub profile"
           href={`https://github.com/${props.username}`}
         >
           <svg
             role="img"
+            aria-hidden="true"
             width="24"
             height="24"
             viewBox="0 0 24 24"

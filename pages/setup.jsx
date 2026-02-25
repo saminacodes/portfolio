@@ -77,9 +77,6 @@ export default function SetupPage() {
         <h2 className="green-text">Desk/Accessories</h2>
         <div className="table-wrapper">
           <table>
-            {/* <tr>
-            <th colSpan="3">Desk</th>
-          </tr> */}
             <SetupItem
               category="Desk"
               item="Ergonofis The Shift / Deep Black / 30&#39; X 72&#39;"
@@ -112,9 +109,6 @@ export default function SetupPage() {
         <h2 className="blue-text">Softwares</h2>
         <div className="table-wrapper">
           <table>
-            {/* <tr>
-            <th colSpan="3">Content Creation</th>
-          </tr> */}
             <SetupItem
               category="Code Editor"
               item="Visual Studio Code"

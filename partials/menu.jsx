@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Socials from "../components/common/Socials";
 
-export default function Menu() {
+export default function Menu({ id }) {
   function closeMenu() {
     document
       .querySelector("header button.hamburger")
@@ -11,34 +11,23 @@ export default function Menu() {
   }
 
   return (
-    <div className="menu">
+    <div className="menu" id={id}>
       <div className="wrapper">
         <ul className="nav-list">
           <li>
-            <Link href="/">
-              <a onClick={closeMenu}>Home</a>
-            </Link>
-          </li>
-          {/* <li>
-            <Link href="/setup">
-              <a onClick={closeMenu}>Setup</a>
-            </Link>
-          </li> */}
-          <li>
-            <Link href="/about">
-              <a onClick={closeMenu}>About</a>
-            </Link>
+            <Link href="/" onClick={closeMenu}>Home</Link>
           </li>
           <li>
-            <Link href="https://saminacodes.medium.com/">
-              <a onClick={closeMenu}>Blog</a>
-            </Link>
+            <Link href="/about" onClick={closeMenu}>About</Link>
+          </li>
+          <li>
+            <Link href="https://saminacodes.medium.com/" target="_blank" rel="noreferrer" onClick={closeMenu}>Blog</Link>
           </li>
         </ul>
         <div className="footer-socials">
           <Socials username="saminacodes"></Socials>
           <p className="copyright">
-            &copy; 2025 saminacodes | All Rights Reserved
+            &copy; {new Date().getFullYear()} saminacodes | All Rights Reserved
           </p>
         </div>
       </div>
