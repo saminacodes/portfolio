@@ -16,9 +16,9 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             className="button discord-button"
-            href="https://replit.com/refer/saminacodes"
+            href="https://replit.com/refer/saminacodes?trackingContext=universal-settings-modal"
           >
-            <span>Get $10 in Credits</span>
+            <span>Get $20 in Credits</span>
           </a>
         </div>
         <div className="footer-socials">
