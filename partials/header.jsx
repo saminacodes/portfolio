@@ -18,6 +18,13 @@ export default function Header() {
     body.classList.toggle("active-menu");
   }
 
+  function closeMenu() {
+    setIsMenuOpen(false);
+    buttonRef.current?.classList.remove("is-active");
+    headerRef.current?.querySelector(".menu")?.classList.remove("active-menu");
+    document.body.classList.remove("active-menu");
+  }
+
   return (
     <header id="main-header" className="header" ref={headerRef}>
       <div className="wrapper">
@@ -25,6 +32,7 @@ export default function Header() {
           <div className="logo">
             <Link href="/">saminacodes</Link>
           </div>
+          <Menu id="main-menu" onNavigate={closeMenu} />
           <button
             className="hamburger hamburger--collapse"
             type="button"
@@ -39,7 +47,6 @@ export default function Header() {
             </span>
           </button>
         </nav>
-        <Menu id="main-menu" />
       </div>
     </header>
   );

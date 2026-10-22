@@ -18,9 +18,11 @@ header.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
   }
 
   .hamburger {
+    display: none;
     padding: 0;
     @include hover-opacity;
 
@@ -33,6 +35,12 @@ header.header {
         background-color: var(--white);
         width: 32px;
       }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: block;
     }
   }
 }

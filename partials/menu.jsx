@@ -1,27 +1,19 @@
 import Link from "next/link";
 import Socials from "../components/common/Socials";
 
-export default function Menu({ id }) {
-  function closeMenu() {
-    document
-      .querySelector("header button.hamburger")
-      .classList.remove("is-active");
-    document.querySelector("header .menu").classList.remove("active-menu");
-    document.querySelector("body").classList.remove("active-menu");
-  }
-
+export default function Menu({ id, onNavigate }) {
   return (
     <div className="menu" id={id}>
       <div className="wrapper">
         <ul className="nav-list">
           <li>
-            <Link href="/" onClick={closeMenu}>Home</Link>
+            <Link href="/" onClick={onNavigate}>Home</Link>
           </li>
           <li>
-            <Link href="/about" onClick={closeMenu}>About</Link>
+            <Link href="/blog" onClick={onNavigate}>Blog</Link>
           </li>
           <li>
-            <Link href="https://saminacodes.medium.com/" target="_blank" rel="noreferrer" onClick={closeMenu}>Blog</Link>
+            <Link href="/about" onClick={onNavigate}>About</Link>
           </li>
         </ul>
         <div className="footer-socials">

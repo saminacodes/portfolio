@@ -1,32 +1,22 @@
 footer#footer {
   width: 100%;
   height: auto;
-
-  .contact-text {
-    font-size: clamp(3rem, 10vw, 4rem);
-    line-height: 1.15;
-    span {
-      color: var(--pastel-purple);
-    }
-    max-width: 20ch;
-  }
-
-  button,
-  a.button {
-    margin-top: 2rem;
-  }
-  .discord-button {
-    display: inline-flex;
-    gap: 8px;
-    align-items: center;
-  }
+  padding: 2rem 0 2.5rem;
 
   .copyright {
     font-size: 0.75rem;
-    padding-top: 12px;
+    margin-top: 0.25rem;
+    text-align: center;
   }
 
   .footer-socials {
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    .social-links {
+      justify-content: center;
+    }
   }
 }

@@ -4,23 +4,6 @@ export default function Footer() {
   return (
     <footer id="footer">
       <div className="wrapper">
-        <div>
-          <p className="contact-text">
-            Build apps
-            <span>
-              <br />
-              with Replit
-            </span>
-          </p>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="button discord-button"
-            href="https://replit.com/refer/saminacodes?trackingContext=universal-settings-modal"
-          >
-            <span>Get $20 in Credits</span>
-          </a>
-        </div>
         <div className="footer-socials">
           <Socials username="saminacodes"></Socials>
           <p className="copyright">

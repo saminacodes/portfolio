@@ -122,3 +122,41 @@
     }
   }
 }
+
+@media screen and (min-width: 769px) {
+  .menu {
+    position: static;
+    display: block;
+    width: auto;
+    height: auto;
+    background: transparent;
+
+    .wrapper {
+      display: block;
+      width: auto;
+      max-width: none;
+      height: auto;
+      padding: 0;
+      margin: 0;
+      overflow: visible;
+    }
+
+    .nav-list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: clamp(1.5rem, 3vw, 3rem);
+      margin: 0;
+
+      li a {
+        font-family: var(--body);
+        font-size: 1rem;
+      }
+    }
+
+    .footer-socials,
+    .graphics {
+      display: none;
+    }
+  }
+}

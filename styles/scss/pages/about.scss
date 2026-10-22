@@ -1,6 +1,16 @@
 .about {
+  font-family: var(--body);
+
+  p,
+  button,
+  a {
+    font-family: var(--body);
+  }
+
   h2 {
-    font-size: clamp(2.5rem, 10vw, 6rem);
+    font-family: var(--title);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
 
     @media screen and (max-width: 768px) {
       text-align: center;
@@ -15,8 +25,13 @@
     }
   }
   .about-text {
-    font-size: 1.5rem;
-    max-width: 55ch;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: none;
+  }
+
+  .about-text + .about-text {
+    margin-top: 1.5rem;
   }
 
   .about-section,
@@ -29,11 +44,89 @@
     }
   }
 
+  .faq-section {
+    margin-bottom: 80px;
+
+    h2 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+  }
+
   .main-hero {
+    min-height: 0;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+
+    &.main-hero .row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(2rem, 6vw, 4rem);
+
+      .content-container {
+        grid-column: 1;
+      }
+
+      .image-container {
+        grid-column: 2;
+        justify-self: center;
+        align-self: center;
+      }
+    }
+
+    .row .image-container {
+      width: min(200px, 100%);
+      height: auto;
+      max-width: 200px;
+      max-height: none;
+
+      &.polaroid {
+        width: min(300px, 100%);
+        max-width: 300px;
+        aspect-ratio: 300 / 356;
+      }
+    }
+
+    .main-title {
+      font-family: var(--title);
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    h2.main-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    .description {
+      font-family: var(--body);
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      line-height: 1.65;
+    }
+
     .red-text {
       text-align: left;
     }
+
     @media screen and (max-width: 768px) {
+      &.main-hero .row {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .row .image-container {
+        width: min(180px, 100%);
+        max-width: 180px;
+        max-height: none;
+
+        &.polaroid {
+          width: min(300px, 100%);
+          max-width: 300px;
+        }
+      }
+
       .description {
         max-width: unset !important;
       }
@@ -41,12 +134,130 @@
   }
 
   .about-section {
+    > .wrapper {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      align-items: center;
+      gap: clamp(2rem, 6vw, 6rem);
+    }
+
     .yellow-text {
       text-align: left;
     }
+
+    .green-text {
+      text-align: left;
+    }
     .content-container {
-      max-width: max-content;
-      margin-left: auto;
+      width: 100%;
+      max-width: none;
+      grid-column: 2;
+    }
+
+    .about-gallery {
+      grid-column: 1;
+      grid-row: 1;
+      position: relative;
+      width: min(400px, 100%);
+      height: 500px;
+      margin: 0;
+      justify-self: center;
+    }
+
+    .gallery-polaroid {
+      position: absolute;
+      width: min(300px, 100%);
+      box-sizing: border-box;
+      margin: 0;
+      background: #fffaf0;
+      padding: 24px 24px 80px;
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 8px 10px -6px rgb(0 0 0 / 10%);
+      cursor: pointer;
+      transition: transform 500ms cubic-bezier(0.22, 1.2, 0.36, 1);
+
+      figcaption {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        left: 0;
+        color: var(--dark-grey);
+        font-family: "Architects Daughter", cursive;
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+
+    .gallery-polaroid-bottom {
+      top: 80px;
+      left: 40px;
+      z-index: 1;
+      transform: rotate(-4deg);
+    }
+
+    .gallery-polaroid-top {
+      top: 20px;
+      left: 60px;
+      z-index: 1;
+      transform: rotate(3deg);
+    }
+
+    .gallery-polaroid.is-front {
+      z-index: 3;
+    }
+
+    .about-gallery:hover .gallery-polaroid-bottom {
+      transform: translate(-100px, 40px) rotate(-16deg);
+    }
+
+    .about-gallery:hover .gallery-polaroid-top {
+      transform: translate(88px, -28px) rotate(14deg);
+    }
+
+    .gallery-photo-frame {
+      aspect-ratio: 1;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 20%);
+
+      img {
+        object-fit: cover;
+        transition: transform 500ms ease-out;
+      }
+    }
+
+    .gallery-photo-placeholder {
+      aspect-ratio: 1;
+      background: #e9e7e4;
+      transition: transform 500ms ease-out;
+    }
+
+    .about-gallery:hover .gallery-photo-placeholder,
+    .about-gallery:hover .gallery-photo-frame img {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+      > .wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .about-gallery,
+      .content-container {
+        grid-column: 1;
+      }
+
+      .about-gallery {
+        width: 100%;
+        height: 480px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .gallery-polaroid,
+      .gallery-photo-placeholder,
+      .gallery-photo-frame img {
+        transition: none;
+      }
     }
   }
 
@@ -79,6 +290,86 @@
   .faq-section {
     .faq-container {
       margin-top: 2rem;
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      align-items: center;
+      gap: clamp(2rem, 7vw, 6rem);
+    }
+
+    .taurus-card {
+      width: 100%;
+      max-width: 480px;
+      justify-self: center;
+      padding: 0;
+      animation: taurus-float 7s ease-in-out infinite;
+    }
+
+    .taurus-chart {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+    }
+
+    .taurus-connection {
+      stroke: #fff;
+      stroke-width: 1.25;
+    }
+
+    .taurus-star {
+      stroke: none;
+    }
+
+    .taurus-star-group {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: taurus-pulse 4.5s ease-in-out infinite;
+    }
+
+    @keyframes taurus-pulse {
+      0%,
+      100% {
+        opacity: 0.82;
+        transform: scale(0.92);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.12);
+      }
+    }
+
+    @keyframes taurus-float {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .taurus-card,
+      .taurus-star-group {
+        animation: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .taurus-card {
+        max-width: 520px;
+      }
     }
   }
 }

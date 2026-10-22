@@ -39,17 +39,38 @@ export const CustomSections = (props) => {
               </a>
             )}
           </div>
-          <div className="col image-container">
+          <div className={`col image-container ${props.imageFrame || ""}`}>
             {props.imageLink && (
-              <Image
-                src={props.imageLink}
-                fill
-                alt={props.imageAlt || props.title || ""}
-                style={{ objectFit: "cover" }}
-                sizes="(max-width: 768px) 75vw, 480px"
-              />
+              props.imageFrame === "polaroid" ? (
+                <div className="polaroid-stage">
+                  <div
+                    className="polaroid-backing"
+                    aria-hidden="true"
+                    style={{ backgroundColor: "var(--pastel-red)" }}
+                  />
+                  <div className="polaroid-paper">
+                    <div className="polaroid-photo-frame">
+                      <Image
+                        src={props.imageLink}
+                        fill
+                        alt={props.imageAlt || props.title || ""}
+                        style={{ objectFit: "cover" }}
+                        sizes="(max-width: 768px) 75vw, 480px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                  <Image
+                    src={props.imageLink}
+                    fill
+                    alt={props.imageAlt || props.title || ""}
+                    style={{ objectFit: "cover" }}
+                    sizes="(max-width: 768px) 75vw, 480px"
+                  />
+              )
             )}
-            <div className={`bg-square ${props.bgColor}`}></div>
+            {props.bgColor && <div className={`bg-square ${props.bgColor}`}></div>}
           </div>
         </div>
       </div>
