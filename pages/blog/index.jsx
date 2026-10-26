@@ -4,9 +4,11 @@ import blogPosts, { getReadTime } from "../../data/blogPosts";
 
 export default function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const categories = ["All", "Updates", "Pinokio", "Personal"];
+  const categories = ["All", "Updates", "Pinokio", "Personal", "Archive"];
   const visiblePosts = blogPosts.filter(
-    ({ category }) => selectedCategory === "All" || category === selectedCategory
+    ({ category }) =>
+      (selectedCategory === "All" && category !== "Archive") ||
+      category === selectedCategory,
   );
 
   return (

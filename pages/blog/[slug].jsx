@@ -2,6 +2,12 @@ import Link from "next/link";
 import blogPosts, { getReadTime } from "../../data/blogPosts";
 
 export default function BlogPostPage({ post }) {
+  const isNumberedLessons = [
+    "23-lessons-from-2023",
+    "24-lessons-from-2024",
+    "25-lessons-from-2025",
+  ].includes(post.slug);
+
   return (
     <main className="blog-page blog-post-page">
       <article className={`blog-post wrapper blog-color-${post.color}`}>
@@ -11,21 +17,6 @@ export default function BlogPostPage({ post }) {
         <header className={`blog-post-header blog-color-${post.color}`}>
           <h1>{post.title}</h1>
           <p className="blog-post-deck">{post.excerpt}</p>
-        </header>
-        <div className="blog-post-body">
-          {post.sections.map((section) => (
-            <section key={section.heading}>
-              <h2>{section.heading}</h2>
-              {section.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-            </section>
-          ))}
-          <Link href="/blog" className="blog-read-link">
-            Back to all writing <span aria-hidden="true">↗</span>
-          </Link>
-        </div>
-        <footer className="blog-post-footer">
           <p className="blog-meta">
             <span className={`blog-category blog-color-${post.color}`}>
               {post.category}
@@ -33,7 +24,31 @@ export default function BlogPostPage({ post }) {
             <span>{formatDate(post.date)}</span>
             <span>{getReadTime(post)}</span>
           </p>
-        </footer>
+        </header>
+        <div className={`blog-post-body${isNumberedLessons ? " blog-lessons" : ""}`}>
+          {post.sections.map((section) => (
+            <section key={section.heading}>
+              {isNumberedLessons ? (
+                <p>
+                  <strong>{section.heading}</strong>
+                  {section.paragraphs.length > 0 && (
+                    <> {section.paragraphs.join(" ")}</>
+                  )}
+                </p>
+              ) : (
+                <>
+                  <h2>{section.heading}</h2>
+                  {section.paragraphs.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </>
+              )}
+            </section>
+          ))}
+          <Link href="/blog" className="blog-read-link">
+            Back to all writing <span aria-hidden="true">↗</span>
+          </Link>
+        </div>
       </article>
     </main>
   );

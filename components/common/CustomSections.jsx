@@ -54,6 +54,7 @@ export const CustomSections = (props) => {
                         src={props.imageLink}
                         fill
                         alt={props.imageAlt || props.title || ""}
+                        loading={props.imageLoading || "lazy"}
                         style={{ objectFit: "cover" }}
                         sizes="(max-width: 768px) 75vw, 480px"
                       />
@@ -65,6 +66,7 @@ export const CustomSections = (props) => {
                     src={props.imageLink}
                     fill
                     alt={props.imageAlt || props.title || ""}
+                    loading={props.imageLoading || "lazy"}
                     style={{ objectFit: "cover" }}
                     sizes="(max-width: 768px) 75vw, 480px"
                   />

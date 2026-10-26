@@ -3,8 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding-top: 125px;
-    padding-bottom: 125px;
+    padding: clamp(4rem, 8vw, 6rem) 0;
+
+    section + section {
+        margin-top: clamp(3rem, 6vw, 5rem);
+    }
 
     h2 {
         font-size: 3rem;

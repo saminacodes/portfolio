@@ -1,4 +1,7 @@
 .about {
+  --about-section-gap: clamp(3rem, 6vw, 4.5rem);
+  --about-column-gap: clamp(2rem, 5vw, 4rem);
+
   font-family: var(--body);
 
   p,
@@ -37,19 +40,13 @@
   .about-section,
   .technologies-section,
   .faq-section {
-    margin-bottom: 180px;
-
-    @media screen and (max-width: 768px) {
-      margin-bottom: 150px;
-    }
+    margin-bottom: var(--about-section-gap);
   }
 
   .faq-section {
-    margin-bottom: 80px;
-
     h2 {
       font-size: clamp(2rem, 5vw, 3rem);
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       text-align: left;
     }
   }
@@ -57,12 +54,16 @@
   .main-hero {
     min-height: 0;
     margin-top: 2rem;
-    padding-bottom: 2rem;
+
+    &.block.hero {
+      margin-bottom: var(--about-section-gap);
+      padding-bottom: 0;
+    }
 
     &.main-hero .row {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: clamp(2rem, 6vw, 4rem);
+      gap: var(--about-column-gap);
 
       .content-container {
         grid-column: 1;
@@ -138,7 +139,7 @@
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       align-items: center;
-      gap: clamp(2rem, 6vw, 6rem);
+      gap: var(--about-column-gap);
     }
 
     .yellow-text {
@@ -189,7 +190,7 @@
 
     .gallery-polaroid-bottom {
       top: 80px;
-      left: 40px;
+      left: calc(40px - 16.67%);
       z-index: 1;
       transform: rotate(-4deg);
     }
@@ -238,7 +239,7 @@
     @media (max-width: 768px) {
       > .wrapper {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: var(--about-column-gap);
       }
 
       .about-gallery,
@@ -247,8 +248,29 @@
       }
 
       .about-gallery {
-        width: 100%;
+        width: min(400px, 100%);
         height: 480px;
+      }
+
+      .gallery-polaroid {
+        left: 50%;
+        width: min(300px, calc(100% - 32px));
+      }
+
+      .gallery-polaroid-bottom {
+        transform: translateX(-50%) rotate(-4deg);
+      }
+
+      .gallery-polaroid-top {
+        transform: translateX(-50%) rotate(3deg);
+      }
+
+      .about-gallery:hover .gallery-polaroid-bottom {
+        transform: translateX(-50%) rotate(-4deg);
+      }
+
+      .about-gallery:hover .gallery-polaroid-top {
+        transform: translateX(-50%) rotate(3deg);
       }
     }
 
@@ -289,22 +311,27 @@
 
   .faq-section {
     .faq-container {
-      margin-top: 2rem;
+      margin-top: 0;
+
+      a {
+        color: var(--pastel-green);
+      }
     }
 
     .faq-layout {
       display: grid;
       grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
       align-items: center;
-      gap: clamp(2rem, 7vw, 6rem);
+      gap: var(--about-column-gap);
     }
 
     .taurus-card {
+      position: relative;
       width: 100%;
       max-width: 480px;
       justify-self: center;
       padding: 0;
-      animation: taurus-float 7s ease-in-out infinite;
+      animation: taurus-float 6s ease-in-out infinite;
     }
 
     .taurus-chart {
@@ -322,6 +349,35 @@
 
     .taurus-star {
       stroke: none;
+      cursor: default;
+    }
+
+    .taurus-tooltip {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: grid;
+      gap: 0.15rem;
+      min-height: 2.8rem;
+      color: #fff;
+      font-size: 0.78rem;
+      text-align: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 160ms ease;
+
+      &[aria-hidden="false"] {
+        opacity: 1;
+      }
+
+      strong {
+        color: var(--pastel-yellow);
+      }
+
+      span {
+        color: #dedbe3;
+      }
     }
 
     .taurus-star-group {
@@ -346,11 +402,11 @@
     @keyframes taurus-float {
       0%,
       100% {
-        transform: translateY(0);
+        transform: translate(0, 0);
       }
 
       50% {
-        transform: translateY(-5px);
+        transform: translate(7px, -9px);
       }
     }
 
@@ -359,12 +415,16 @@
       .taurus-star-group {
         animation: none;
       }
+
+      .taurus-tooltip {
+        transition: none;
+      }
     }
 
     @media (max-width: 768px) {
       .faq-layout {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: var(--about-column-gap);
       }
 
       .taurus-card {

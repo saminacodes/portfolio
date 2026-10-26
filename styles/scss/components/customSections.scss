@@ -1,11 +1,11 @@
 section.block.hero {
-  min-height: 640px;
-  padding-bottom: 10px;
-  margin-bottom: 3vmax;
+  min-height: clamp(460px, 56vw, 560px);
+  padding-bottom: 0;
+  margin-bottom: clamp(1.5rem, 3vw, 3rem);
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 7vmax;
-    padding-bottom: 40px;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
     min-height: unset;
   }
 
@@ -14,7 +14,7 @@ section.block.hero {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 7vmax;
+    gap: clamp(2rem, 5vw, 4rem);
 
     @media screen and (max-width: 768px) {
       flex-direction: column-reverse;

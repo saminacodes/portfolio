@@ -3,40 +3,43 @@ import { CustomSections } from "../components/common/CustomSections";
 import { Question } from "../components/common/Questions";
 
 const taurusStars = [
-  { name: "Aldebaran", x: -0.93, y: 16.51, color: "var(--pastel-red)" },
-  { name: "Elnath", x: -12.91, y: 28.61, color: "var(--pastel-yellow)" },
-  { name: "Zeta", x: -15.61, y: 21.14, color: "var(--pastel-green)" },
-  { name: "Gamma", x: 2.9, y: 15.63, color: "var(--pastel-purple)" },
-  { name: "Delta1", x: 2.16, y: 17.54, color: "var(--pastel-blue)" },
-  { name: "Epsilon", x: 0.81, y: 19.18, color: "var(--pastel-red)" },
-  { name: "Theta2", x: 0.79, y: 15.87, color: "var(--pastel-yellow)" },
-  { name: "Tau", x: -2.43, y: 22.96, color: "var(--pastel-green)" },
-  { name: "Lambda", x: 7.45, y: 12.49, color: "var(--pastel-purple)" },
-  { name: "Omicron", x: 15.98, y: 9.03, color: "var(--pastel-blue)" },
-  { name: "Xi", x: 15.42, y: 9.73, color: "var(--pastel-red)" },
-  { name: "Alcyone", x: 10.58, y: 24.1, color: "var(--pastel-yellow)" },
+  { name: "Aldebaran", designation: "α Tauri", magnitude: "1.0", ra: 4.5987, dec: 16.5098, color: "#ff6f69" },
+  { name: "Elnath", designation: "β Tauri", magnitude: "1.7", ra: 5.4382, dec: 28.6079, color: "#67aaf9" },
+  { name: "Alcyone", designation: "η Tauri", magnitude: "2.9", ra: 3.7914, dec: 24.1053, color: "#ffcc5c" },
+  { name: "Tianguan", designation: "ζ Tauri", magnitude: "2.9", ra: 5.6274, dec: 21.1426, color: "#ffcc5c" },
+  { name: "Chamukuy", designation: "θ² Tauri", magnitude: "3.4", ra: 4.4777, dec: 15.8709, color: "#ffcc5c" },
+  { name: "λ Tauri", designation: "λ Tauri · Bibing", magnitude: "3.5", ra: 4.0113, dec: 12.4904, color: "#9896ce" },
+  { name: "Ain", designation: "ε Tauri", magnitude: "3.6", ra: 4.4769, dec: 19.1805, color: "#67aaf9" },
+  { name: "O-Tau", designation: "ο Tauri", magnitude: "3.6", ra: 3.4136, dec: 9.0291, color: "#ffcc5c" },
+  { name: "Atlas", designation: "27 Tauri", magnitude: "3.6", ra: 3.8194, dec: 24.0535, color: "#96ceb4" },
+  { name: "Prima Hyadum", designation: "γ Tauri", magnitude: "3.7", ra: 4.3299, dec: 15.6277, color: "#96ceb4" },
 ];
 
 const taurusConnections = [
-  ["Elnath", "Zeta"],
-  ["Zeta", "Tau"],
-  ["Tau", "Epsilon"],
-  ["Epsilon", "Aldebaran"],
-  ["Epsilon", "Delta1"],
-  ["Delta1", "Gamma"],
-  ["Epsilon", "Theta2"],
-  ["Theta2", "Aldebaran"],
-  ["Lambda", "Alcyone"],
-  ["Alcyone", "Xi"],
-  ["Xi", "Omicron"],
+  // The horns meet the Hyades face at Ain and Prima Hyadum.
+  ["Elnath", "Ain"],
+  ["Aldebaran", "Tianguan"],
+  ["Ain", "Aldebaran"],
+  ["Prima Hyadum", "Ain"],
+  ["Prima Hyadum", "λ Tauri"],
+  ["Prima Hyadum", "Atlas"],
+  // Outline the Hyades face with the stars included in this chart.
+  ["Aldebaran", "Chamukuy"],
+  ["Prima Hyadum", "Chamukuy"],
+  // The lower body extends from λ Tauri toward O-Tau.
+  ["λ Tauri", "O-Tau"],
 ];
 
 function TaurusConstellation() {
-  const bounds = { left: -18, right: 20, top: 32, bottom: 5 };
-  const toPoint = ({ x, y }) => ({
-    x: 36 + ((x - bounds.left) / (bounds.right - bounds.left)) * 328,
-    y: 30 + ((bounds.top - y) / (bounds.top - bounds.bottom)) * 250,
-  });
+  const [activeStar, setActiveStar] = useState(null);
+  const bounds = { left: -18, right: 20, top: 32, bottom: 0 };
+  const toPoint = ({ ra, dec }) => {
+    const x = (4.55 - ra) * 14.5;
+    return {
+      x: 36 + ((x - bounds.left) / (bounds.right - bounds.left)) * 328,
+      y: 30 + ((bounds.top - dec) / (bounds.top - bounds.bottom)) * 250,
+    };
+  };
   const starsByName = Object.fromEntries(taurusStars.map((star) => [star.name, star]));
 
   return (
@@ -44,7 +47,7 @@ function TaurusConstellation() {
       <svg
         className="taurus-chart"
         viewBox="0 0 400 310"
-        role="img"
+        role="group"
         aria-labelledby="taurus-title taurus-description"
       >
         <title id="taurus-title">Taurus constellation</title>
@@ -77,13 +80,23 @@ function TaurusConstellation() {
                 className="taurus-star"
                 cx={point.x}
                 cy={point.y}
-                r="2.7"
+                r={Math.max(1.5, 4.5 - Number(star.magnitude) * 0.6)}
                 fill={star.color}
+                onMouseEnter={() => setActiveStar(star)}
+                onMouseLeave={() => setActiveStar(null)}
               />
             </g>
           );
         })}
       </svg>
+      <div className="taurus-tooltip" role="status" aria-live="polite" aria-hidden={!activeStar}>
+        {activeStar && (
+          <>
+            <strong>{activeStar.name} · {activeStar.designation}</strong>
+            <span>Magnitude {activeStar.magnitude}</span>
+          </>
+        )}
+      </div>
     </aside>
   );
 }
@@ -100,6 +113,7 @@ export default function AboutPage() {
         textColor="red-text"
         imageFrame="polaroid"
         imageLink="/images/samina.jpg"
+        imageLoading="eager"
         content="My name is Samina and I just want to make you smile. ʕ•ᴥ•ʔ"
       />
       <section className="about-section">
@@ -180,7 +194,7 @@ export default function AboutPage() {
       </section>
       <div className="faq-section">
         <div className="wrapper">
-          <h2 className="blue-text">FAQ</h2>
+          <h2 className="green-text">FAQ</h2>
           <div className="faq-layout">
             <div className="faq-container">
               <Question
