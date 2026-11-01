@@ -201,6 +201,13 @@
       font-size: clamp(1.5rem, 3vw, 2rem);
     }
 
+    h3 {
+      margin: 1.5rem 0 var(--blog-heading-gap);
+      color: var(--blog-accent, var(--pastel-yellow));
+      font-size: 1.15rem;
+      line-height: 1.4;
+    }
+
     p {
       margin: 0;
       color: rgb(250 250 250 / 78%);
@@ -210,6 +217,43 @@
 
     p + p {
       margin-top: var(--blog-paragraph-gap);
+    }
+
+    a {
+      color: var(--blog-accent, var(--pastel-yellow));
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .blog-code-block {
+      overflow-x: auto;
+      margin: 1rem 0;
+      padding: 1rem 1.25rem;
+      border: 1px solid rgb(250 250 250 / 14%);
+      border-radius: 0.5rem;
+      background: rgb(0 0 0 / 24%);
+      color: rgb(250 250 250 / 85%);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      white-space: pre;
+    }
+
+    .blog-post-image {
+      margin: 1.5rem 0;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+      }
+
+      figcaption {
+        margin-top: 0.6rem;
+        color: rgb(250 250 250 / 55%);
+        font-size: 0.85rem;
+        line-height: 1.5;
+      }
     }
   }
 

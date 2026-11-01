@@ -57,7 +57,7 @@ export default function BlogPage() {
                   <span className={`blog-category blog-color-${post.color}`}>
                     {post.category}
                   </span>
-                  <span>{formatDate(post.date)}</span>
+                  {post.date && <span>{formatDate(post.date)}</span>}
                   <span>{getReadTime(post)}</span>
                 </p>
               </article>

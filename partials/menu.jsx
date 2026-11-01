@@ -10,7 +10,7 @@ export default function Menu({ id, onNavigate }) {
             <Link href="/" onClick={onNavigate}>Home</Link>
           </li>
           <li>
-            <Link href="/blog" onClick={onNavigate}>Blog</Link>
+            <Link href="/blog" onClick={onNavigate}>Writing</Link>
           </li>
           <li>
             <Link href="/about" onClick={onNavigate}>About</Link>

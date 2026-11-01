@@ -21,14 +21,62 @@ export default function BlogPostPage({ post }) {
             <span className={`blog-category blog-color-${post.color}`}>
               {post.category}
             </span>
-            <span>{formatDate(post.date)}</span>
+            {post.date && <span>{formatDate(post.date)}</span>}
             <span>{getReadTime(post)}</span>
           </p>
         </header>
         <div className={`blog-post-body${isNumberedLessons ? " blog-lessons" : ""}`}>
           {post.sections.map((section) => (
-            <section key={section.heading}>
-              {isNumberedLessons ? (
+            <section key={section.heading || section.content[0]?.text}>
+              {section.content ? (
+                section.content.map((block, index) => {
+                  if (block.type === "image") {
+                    return (
+                      <figure className="blog-post-image" key={`${block.src}-${index}`}>
+                        <img src={block.src} alt={block.alt} />
+                        {block.caption && <figcaption>{block.caption}</figcaption>}
+                      </figure>
+                    );
+                  }
+
+                  if (block.type === "code") {
+                    return (
+                      <pre className="blog-code-block" key={`code-${index}`}>
+                        <code>{block.text}</code>
+                      </pre>
+                    );
+                  }
+
+                  if (block.type === "heading") {
+                    return <h2 key={`heading-${index}`}>{block.text}</h2>;
+                  }
+
+                  if (block.type === "subheading") {
+                    return <h3 key={`subheading-${index}`}>{block.text}</h3>;
+                  }
+
+                  if (block.type === "link") {
+                    return (
+                      <p key={`${block.href}-${index}`}>
+                        <a href={block.href}>{block.text}</a>
+                      </p>
+                    );
+                  }
+
+                  if (block.link) {
+                    const linkStart = block.text.indexOf(block.link.text);
+                    return (
+                      <p key={`${block.text.slice(0, 32)}-${index}`}>
+                        {block.text.slice(0, linkStart)}
+                        <a href={block.link.href}>{block.link.text}</a>
+                        {block.text.slice(linkStart + block.link.text.length)}
+                      </p>
+                    );
+                  }
+
+                  return <p key={`${block.text.slice(0, 32)}-${index}`}>{block.text}</p>;
+                })
+              ) : isNumberedLessons ? (
                 <p>
                   <strong>{section.heading}</strong>
                   {section.paragraphs.length > 0 && (
