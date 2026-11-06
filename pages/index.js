@@ -10,6 +10,7 @@ export default function Home() {
         textColor="red-text"
         bgColor="bg-red"
         imageLink="/images/port-1.png"
+        imageLoading="eager"
         content="I like to create comics, apps, and robots."
       ></CustomSections>
       <CustomSections

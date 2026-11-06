@@ -1,3 +1,5 @@
+@use "../global/mixins" as *;
+
 header.header {
   display: flex;
   align-items: center;

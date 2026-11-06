@@ -1,5 +1,5 @@
-@import "button.scss";
-@import "socials.scss";
-@import "customSections.scss";
-@import "setupItem.scss";
-@import "questions.scss";
+@use "button";
+@use "socials";
+@use "customSections";
+@use "setupItem";
+@use "questions";

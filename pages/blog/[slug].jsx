@@ -30,6 +30,18 @@ export default function BlogPostPage({ post }) {
             <section key={section.heading || section.content[0]?.text}>
               {section.content ? (
                 section.content.map((block, index) => {
+                  if (block.type === "ordered-list") {
+                    return (
+                      <ol key={`list-${index}`}>
+                        {block.items.map((item) => <li key={item}>{item}</li>)}
+                      </ol>
+                    );
+                  }
+
+                  if (block.type === "divider") {
+                    return <hr key={`divider-${index}`} />;
+                  }
+
                   if (block.type === "image") {
                     return (
                       <figure className="blog-post-image" key={`${block.src}-${index}`}>

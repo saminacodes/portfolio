@@ -1,3 +1,4 @@
+import "hamburgers/dist/hamburgers.css";
 import "../styles/config.scss";
 import Header from "../partials/header";
 import Footer from "../partials/footer";

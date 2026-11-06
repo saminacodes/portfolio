@@ -1,3 +1,5 @@
+@use "../global/mixins" as *;
+
 section.block.hero {
   min-height: clamp(460px, 56vw, 560px);
   padding-bottom: 0;

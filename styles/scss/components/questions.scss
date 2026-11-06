@@ -1,3 +1,5 @@
+@use "../global/mixins" as *;
+
 .faq {
   padding: 1.25rem 0;
   transition: transform 220ms ease;

@@ -1,8 +1,55 @@
 import nailsImage from "../blog-imgs/nails.webp";
 import wileyWolfImage from "../blog-imgs/wiley_wolf.webp";
 import wileyJellyImage from "../blog-imgs/wiley_jelly.webp";
+import coloringImage from "../coloring.jpg";
 
 const blogPosts = [
+  {
+    slug: "a-vending-machine-for-coloring-pages",
+    title: "I have a goofy idea I want to build",
+    date: "2026-04-29",
+    category: "Personal",
+    color: "red",
+    excerpt: "Imagine picking a coloring page from a digital catalog and instantly printing it at your local library or museum.",
+    sections: [
+      {
+        content: [
+          { type: "paragraph", text: "Lately, I always want to invent things for my younger self. Like the younger goofy me at eight who did nothing but doodle, play Pokemon, and snip away all the spearmint from her dad’s garden." },
+          { type: "paragraph", text: "Something on my mind this week is a vending machine for coloring pages. Imagine being able to sort through a touch screen digital catalog of coloring pages. You pick one and then instantly print it in a kiosk sort of experience." },
+          {
+            type: "image",
+            src: coloringImage.src,
+            alt: "Concept for a vending machine for coloring pages",
+          },
+          { type: "paragraph", text: "Yes, you could totally do this on a laptop and a printer, but imagine a giant vending machine experience at your local library or a museum. Fuuuutuuuureeee." },
+          { type: "paragraph", text: "Admit it. It beats printing one at home. Or getting a coloring book." },
+          {
+            type: "ordered-list",
+            items: [
+              "With coloring books, you might not enjoy or like all the pages. Pages and books get wasted.",
+              "You cannot redo a page you messed up or do one you enjoyed again.",
+              "You can do the category you feel like doing in the moment, without collecting hoards of books.",
+            ],
+          },
+          { type: "paragraph", text: "I’d imagine it would be fun to monetize as well. You can charge something like ten cents per page and instantly send royalties back to the coloring book artist. Nothing beats supporting real artists." },
+          { type: "paragraph", text: "If I wanted to extend the idea:" },
+          {
+            type: "ordered-list",
+            items: [
+              "Add different types of paper- e.g., glossy, black, watercolor,…",
+              "Add different dimension options for a postcard or a poster.",
+              "Print and cut out stickers.",
+              "Add a camera and generate a coloring page of you",
+            ],
+          },
+          { type: "paragraph", text: "I wouldn’t be surprised if this already existed. If it does, please link me." },
+          { type: "paragraph", text: "As always, thanks for reading." },
+          { type: "divider" },
+          { type: "paragraph", text: "This post is for Carmen Li. She always listens to my random ideas like this every single week without getting tired of me. Spared you this week." },
+        ],
+      },
+    ],
+  },
   {
     slug: "bitcoin-altcoin-stablecoin-memecoin-shitcoin",
     title: "What Are the Different Categories of Cryptocurrency",
@@ -708,6 +755,7 @@ export function getReadTime(post) {
             block.text,
             block.link?.text,
             block.caption,
+            ...(block.items || []),
           ])
         : [heading, ...paragraphs],
     ),

@@ -1,3 +1,5 @@
+@use "../global/mixins" as *;
+
 .about {
   --about-section-gap: clamp(3rem, 6vw, 4.5rem);
   --about-column-gap: clamp(2rem, 5vw, 4rem);
@@ -56,7 +58,7 @@
     margin-top: 2rem;
 
     &.block.hero {
-      margin-bottom: var(--about-section-gap);
+      margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
       padding-bottom: 0;
     }
 
@@ -137,7 +139,7 @@
   .about-section {
     > .wrapper {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
       align-items: center;
       gap: var(--about-column-gap);
     }

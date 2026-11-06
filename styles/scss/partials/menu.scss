@@ -1,3 +1,5 @@
+@use "../global/mixins" as *;
+
 .menu {
   position: fixed;
   display: none;

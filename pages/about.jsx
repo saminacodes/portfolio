@@ -172,8 +172,7 @@ export default function AboutPage() {
               <a className="about-link" href="https://thirdweb.com">
                 thirdweb
               </a>
-              . I also enjoy creating content and working on small side projects
-              to learn new things.
+              . I am also the creator of <a className="about-link" href="https://www.darkmodecomics.com">DarkModeComics</a>, a web-comic about tech and startups.
             </p>
             <p className="about-text">
               Outside of work, I&apos;m always up for quiet adventures like
@@ -200,7 +199,7 @@ export default function AboutPage() {
               <Question
                 number="001"
                 question="Where are you from?"
-                answer="I am from Afghanistan. I live in the United States. "
+                answer="I am from Afghanistan and I live in the US. "
               />
               <Question
                 number="002"
@@ -230,7 +229,7 @@ export default function AboutPage() {
                 number="004"
                 question="How can I contact you?"
                 answer={[
-                  "I am intentionally impossible to reach. If you have any inquiries related to thirdweb, please ",
+                  "If you have any inquiries related to thirdweb, please ",
                   <a key="test2" href="https://thirdweb.com/contact-us">
                     contact our team.
                   </a>,
