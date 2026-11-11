@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 import { CustomSections } from "../components/common/CustomSections";
 import { Question } from "../components/common/Questions";
 
@@ -137,9 +138,13 @@ export default function AboutPage() {
               aria-label="Bring the lower photo to the front"
             >
               <div className="gallery-photo-frame">
-                <div className="gallery-photo-placeholder" aria-hidden="true" />
+                <Image
+                  src="/images/about_2.jpg"
+                  alt="A photo from Samina's life"
+                  fill
+                  sizes="(max-width: 768px) 70vw, 252px"
+                />
               </div>
-              <figcaption>Add photo</figcaption>
             </figure>
             <figure
               className={`gallery-polaroid gallery-polaroid-top ${
@@ -159,9 +164,13 @@ export default function AboutPage() {
               aria-label="Bring the upper photo to the front"
             >
               <div className="gallery-photo-frame">
-                <div className="gallery-photo-placeholder" aria-hidden="true" />
+                <Image
+                  src="/images/about_3.jpg"
+                  alt="Another photo from Samina's life"
+                  fill
+                  sizes="(max-width: 768px) 70vw, 252px"
+                />
               </div>
-              <figcaption>Add photo</figcaption>
             </figure>
           </div>
           <div className="content-container">

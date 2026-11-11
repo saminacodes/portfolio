@@ -217,6 +217,7 @@
     }
 
     .gallery-photo-frame {
+      position: relative;
       aspect-ratio: 1;
       overflow: hidden;
       box-shadow: 0 4px 12px rgb(0 0 0 / 20%);
